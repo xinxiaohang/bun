@@ -1,7 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.bun.xh</groupId>
   <artifactId>bun-sys</artifactId>
   <version>1.0.0-SNAPSHOT</version>
@@ -13,15 +13,52 @@
     <module>bun-sys-service</module>
   </modules>
   <packaging>pom</packaging>
-
-  <name>bun</name>
+  <name>${project.artifactId}</name>
   <url>http://maven.apache.org</url>
 
   <properties>
+    <!--self properties-->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <bun.api.version>1.0.0-SNAPSHOT</bun.api.version>
+    <bun.version>1.0.0-SNAPSHOT</bun.version>
+    <!--normal properties-->
+    <lombok.version>1.16.16</lombok.version>
   </properties>
 
   <dependencies>
+    <!--self dependencies-->
+    <dependency>
+      <groupId>com.bun.xh</groupId>
+      <artifactId>bun-sys-api</artifactId>
+      <version>${bun.api.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.bun.xh</groupId>
+      <artifactId>bun-sys-biz</artifactId>
+      <version>${bun.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.bun.xh</groupId>
+      <artifactId>bun-sys-comm</artifactId>
+      <version>${bun.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.bun.xh</groupId>
+      <artifactId>bun-sys-repository</artifactId>
+      <version>${bun.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.bun.xh</groupId>
+      <artifactId>bun-sys-service</artifactId>
+      <version>${bun.version}</version>
+    </dependency>
+    <!--normal dependencies-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+    </dependency>
+    <!--test dependencies-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
