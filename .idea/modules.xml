@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bun-sys.iml" filepath="$PROJECT_DIR$/bun-sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bun-sys-api/bun-sys-api.iml" filepath="$PROJECT_DIR$/bun-sys-api/bun-sys-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bun-sys-biz/bun-sys-biz.iml" filepath="$PROJECT_DIR$/bun-sys-biz/bun-sys-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bun-sys-comm/bun-sys-comm.iml" filepath="$PROJECT_DIR$/bun-sys-comm/bun-sys-comm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bun-sys-repository/bun-sys-repository.iml" filepath="$PROJECT_DIR$/bun-sys-repository/bun-sys-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bun-sys-service/bun-sys-service.iml" filepath="$PROJECT_DIR$/bun-sys-service/bun-sys-service.iml" />
+    </modules>
+  </component>
+</project>
