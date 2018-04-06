@@ -24,46 +24,47 @@
     <!--normal properties-->
     <lombok.version>1.16.16</lombok.version>
   </properties>
-
-  <dependencies>
-    <!--self dependencies-->
-    <dependency>
-      <groupId>com.bun.xh</groupId>
-      <artifactId>bun-sys-api</artifactId>
-      <version>${bun.api.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.bun.xh</groupId>
-      <artifactId>bun-sys-biz</artifactId>
-      <version>${bun.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.bun.xh</groupId>
-      <artifactId>bun-sys-comm</artifactId>
-      <version>${bun.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.bun.xh</groupId>
-      <artifactId>bun-sys-repository</artifactId>
-      <version>${bun.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.bun.xh</groupId>
-      <artifactId>bun-sys-service</artifactId>
-      <version>${bun.version}</version>
-    </dependency>
-    <!--normal dependencies-->
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${lombok.version}</version>
-    </dependency>
-    <!--test dependencies-->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <!--self dependencies-->
+      <dependency>
+        <groupId>com.bun.xh</groupId>
+        <artifactId>bun-sys-api</artifactId>
+        <version>${bun.api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.bun.xh</groupId>
+        <artifactId>bun-sys-biz</artifactId>
+        <version>${bun.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.bun.xh</groupId>
+        <artifactId>bun-sys-comm</artifactId>
+        <version>${bun.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.bun.xh</groupId>
+        <artifactId>bun-sys-repository</artifactId>
+        <version>${bun.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.bun.xh</groupId>
+        <artifactId>bun-sys-service</artifactId>
+        <version>${bun.version}</version>
+      </dependency>
+      <!--normal dependencies-->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+      </dependency>
+      <!--test dependencies-->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>3.8.1</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>

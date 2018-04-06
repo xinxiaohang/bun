@@ -19,5 +19,9 @@
             <groupId>com.bun.xh</groupId>
             <artifactId>bun-sys-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.bun.xh</groupId>
+            <artifactId>bun-sys-biz</artifactId>
+        </dependency>
     </dependencies>
 </project>
