@@ -37,6 +37,7 @@
     <mybatis.spring.version>1.2.2</mybatis.spring.version>
     <mybatis.version>3.3.0</mybatis.version>
     <mysql.driver.version>5.1.35</mysql.driver.version>
+    <guava.version>18.0</guava.version>
     <!--test properties-->
     <junit.version>4.12</junit.version>
     <spring.test.version>3.2.3.RELEASE</spring.test.version>
@@ -170,6 +171,11 @@
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>${mysql.driver.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
       </dependency>
       <!--test dependencies-->
       <dependency>

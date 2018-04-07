@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bun.xh.repository.db.dao.NewsMapper">
+  <resultMap id="BaseResultMap" type="com.bun.xh.repository.db.model.News">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="news_id" jdbcType="VARCHAR" property="newsId" />
+    <result column="news_title" jdbcType="VARCHAR" property="newsTitle" />
+    <result column="new_desc" jdbcType="VARCHAR" property="newDesc" />
+    <result column="news_pic" jdbcType="VARCHAR" property="newsPic" />
+    <result column="news_type" jdbcType="INTEGER" property="newsType" />
+    <result column="news_status" jdbcType="VARCHAR" property="newsStatus" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+    <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, news_id, news_title, new_desc, news_pic, news_type, news_status, user_id, version, 
+    created_at, updated_at
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from news
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from news
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.News" useGeneratedKeys="true">
+    insert into news (news_id, news_title, new_desc, 
+      news_pic, news_type, news_status, 
+      user_id, version, created_at, 
+      updated_at)
+    values (#{newsId,jdbcType=VARCHAR}, #{newsTitle,jdbcType=VARCHAR}, #{newDesc,jdbcType=VARCHAR}, 
+      #{newsPic,jdbcType=VARCHAR}, #{newsType,jdbcType=INTEGER}, #{newsStatus,jdbcType=VARCHAR}, 
+      #{userId,jdbcType=VARCHAR}, #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
+      #{updatedAt,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.News" useGeneratedKeys="true">
+    insert into news
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="newsId != null">
+        news_id,
+      </if>
+      <if test="newsTitle != null">
+        news_title,
+      </if>
+      <if test="newDesc != null">
+        new_desc,
+      </if>
+      <if test="newsPic != null">
+        news_pic,
+      </if>
+      <if test="newsType != null">
+        news_type,
+      </if>
+      <if test="newsStatus != null">
+        news_status,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="createdAt != null">
+        created_at,
+      </if>
+      <if test="updatedAt != null">
+        updated_at,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="newsId != null">
+        #{newsId,jdbcType=VARCHAR},
+      </if>
+      <if test="newsTitle != null">
+        #{newsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="newDesc != null">
+        #{newDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="newsPic != null">
+        #{newsPic,jdbcType=VARCHAR},
+      </if>
+      <if test="newsType != null">
+        #{newsType,jdbcType=INTEGER},
+      </if>
+      <if test="newsStatus != null">
+        #{newsStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="createdAt != null">
+        #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedAt != null">
+        #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bun.xh.repository.db.model.News">
+    update news
+    <set>
+      <if test="newsId != null">
+        news_id = #{newsId,jdbcType=VARCHAR},
+      </if>
+      <if test="newsTitle != null">
+        news_title = #{newsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="newDesc != null">
+        new_desc = #{newDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="newsPic != null">
+        news_pic = #{newsPic,jdbcType=VARCHAR},
+      </if>
+      <if test="newsType != null">
+        news_type = #{newsType,jdbcType=INTEGER},
+      </if>
+      <if test="newsStatus != null">
+        news_status = #{newsStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=INTEGER},
+      </if>
+      <if test="createdAt != null">
+        created_at = #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedAt != null">
+        updated_at = #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bun.xh.repository.db.model.News">
+    update news
+    set news_id = #{newsId,jdbcType=VARCHAR},
+      news_title = #{newsTitle,jdbcType=VARCHAR},
+      new_desc = #{newDesc,jdbcType=VARCHAR},
+      news_pic = #{newsPic,jdbcType=VARCHAR},
+      news_type = #{newsType,jdbcType=INTEGER},
+      news_status = #{newsStatus,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=VARCHAR},
+      version = #{version,jdbcType=INTEGER},
+      created_at = #{createdAt,jdbcType=TIMESTAMP},
+      updated_at = #{updatedAt,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

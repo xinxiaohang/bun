@@ -1,0 +1,5 @@
+com\bun\xh\api\NewsFacade.class
+com\bun\xh\enums\ResultCodeEnum.class
+com\bun\xh\vo\AbstractResponse.class
+com\bun\xh\api\CommentFacade.class
+com\bun\xh\api\UserFacade.class
