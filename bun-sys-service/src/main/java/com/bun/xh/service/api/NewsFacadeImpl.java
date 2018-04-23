@@ -3,6 +3,8 @@ package com.bun.xh.service.api;
 import com.bun.xh.api.NewsFacade;
 import com.bun.xh.vo.ApproveRequest;
 import com.bun.xh.vo.ApproveResponse;
+import com.bun.xh.vo.DeleteNewsRequest;
+import com.bun.xh.vo.DeleteNewsResponse;
 import com.bun.xh.vo.OverruleRequest;
 import com.bun.xh.vo.OverruleResponse;
 import com.bun.xh.vo.PublishNewsRequest;
@@ -34,6 +36,10 @@ public class NewsFacadeImpl implements NewsFacade {
     }
 
     public ReportResponse report(ReportRequest request) {
+        return null;
+    }
+
+    public DeleteNewsResponse deleteNews(DeleteNewsRequest request) {
         return null;
     }
 }

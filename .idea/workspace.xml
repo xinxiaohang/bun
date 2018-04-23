@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a322d5-be3a-4751-ba6b-1faeb260b552" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/UserFacade.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/UserFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java" afterPath="$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishRequest.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishNewsRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishResponse.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishNewsResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/UserFacadeImpl.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/UserFacadeImpl.java" />
     </list>
     <ignored path="bun.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,13 +37,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NewsFacade.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewsFacade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="161">
               <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsFacadeImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="20" />
+              <folding>
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFacadeImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/UserFacadeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,9 +81,67 @@
       <file leaf-file-name="UserFacade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/UserFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="161">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExceptionConvert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentFacadeImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsStatusEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultCodeEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentFacade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,12 +175,10 @@
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/AbstractResponse.java" />
         <option value="$PROJECT_DIR$/bun-sys-service/pom.xml" />
         <option value="$PROJECT_DIR$/bun-sys-api/pom.xml" />
-        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/UserFacadeImpl.java" />
         <option value="$PROJECT_DIR$/bun-sys-repository/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsMapper.java" />
         <option value="$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/exception/BunServerException.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/exception/BunServiceException.java" />
         <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java" />
@@ -105,19 +189,22 @@
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/LoginResponse.java" />
         <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/dto/UewsDTO.java" />
         <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/dto/NewsDTO.java" />
-        <option value="$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java" />
-        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/ApproveResponse.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/OverruleResponse.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/OverruleRequest.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/UserFacade.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/ReportResponse.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishNewSResponse.java" />
-        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/DeleteNewsResponse.java" />
-        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsMapper.xml" />
-        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java" />
+        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/DeleteCommentResponse.java" />
+        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsMapper.xml" />
+        <option value="$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java" />
+        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java" />
+        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java" />
+        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" />
+        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/UserFacadeImpl.java" />
       </list>
     </option>
   </component>
@@ -309,6 +396,146 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="convert" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bun-sys-api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -340,78 +567,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="xh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bun-sys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bun-sys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bun-sys-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bun-sys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bun-sys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bun-sys-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enums" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -948,12 +1103,12 @@
       <workItem from="1523096636465" duration="5131000" />
       <workItem from="1524358756081" duration="6367000" />
       <workItem from="1524385721974" duration="5460000" />
-      <workItem from="1524456114867" duration="1139000" />
+      <workItem from="1524456114867" duration="3008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43964000" />
+    <option name="totallyTimeSpent" value="45833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -1007,21 +1162,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="679">
@@ -1106,28 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/UserFacadeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1174,6 +1292,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,13 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1300,25 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/DeleteNewsResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1335,35 +1428,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <marker date="1523097521035" expanded="true" signature="1337:1436" placeholder="select from news" />
-            <marker date="1523097521035" expanded="true" signature="1519:1572" placeholder="delete from " />
-            <marker date="1523097521035" expanded="true" signature="1720:2200" placeholder="insert into news... " />
-            <marker date="1523097521035" expanded="true" signature="4128:5164" placeholder="update news " />
-            <marker date="1523097521035" expanded="true" signature="5268:5796" placeholder="update news " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1375,28 +1444,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/DeleteCommentResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/DeleteCommentRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3588">
+          <caret line="156" column="11" selection-start-line="156" selection-start-column="11" selection-end-line="156" selection-end-column="11" />
+          <folding>
+            <marker date="1523097521035" expanded="true" signature="1337:1436" placeholder="select from news" />
+            <marker date="1523097521035" expanded="true" signature="1519:1572" placeholder="delete from " />
+            <marker date="1523097521035" expanded="true" signature="1720:2200" placeholder="insert into news... " />
+            <marker date="1523097521035" expanded="true" signature="4128:5164" placeholder="update news " />
+            <marker date="1523097521035" expanded="true" signature="5268:5796" placeholder="update news " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="437">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/UserFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="161">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/UserFacadeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
           </folding>
         </state>
       </provider>

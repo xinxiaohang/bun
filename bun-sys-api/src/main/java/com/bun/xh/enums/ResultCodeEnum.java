@@ -4,6 +4,7 @@ package com.bun.xh.enums;
  * Created by xin on 2018/4/6.
  */
 public enum ResultCodeEnum {
+
     SUCCESS("0000","操作成功",0);
 
     String code;
