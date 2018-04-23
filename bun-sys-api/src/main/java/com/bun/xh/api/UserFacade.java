@@ -13,6 +13,4 @@ public interface UserFacade {
     RegisterResponse register(RegisterRequest request);
 
     LoginResponse login(LoginRequest request);
-
-
 }
