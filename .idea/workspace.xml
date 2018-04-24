@@ -2,22 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a322d5-be3a-4751-ba6b-1faeb260b552" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/resources/config.spring/applicationContext-boot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/resources/config.spring/applicationContext-jdbc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/api/CommentFacade.class" afterPath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/api/CommentFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/api/NewsFacade.class" afterPath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/api/NewsFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/api/UserFacade.class" afterPath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/api/UserFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/enums/ResultCodeEnum.class" afterPath="$PROJECT_DIR$/bun-sys-api/target/classes/com/bun/xh/enums/ResultCodeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/target/classes/com/bun/xh/service/api/UserFacadeImpl.class" afterPath="$PROJECT_DIR$/bun-sys-service/target/classes/com/bun/xh/service/api/UserFacadeImpl.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/CommentMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsLogMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/UserMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/CommentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsLogMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/Comment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/News.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/NewsLog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/bun-sys-api-1.0.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/bun-sys-api/target/bun-sys-api-1.0.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-biz/target/bun-sys-biz-1.0.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/bun-sys-biz/target/bun-sys-biz-1.0.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-comm/target/bun-sys-comm-1.0.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/bun-sys-comm/target/bun-sys-comm-1.0.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/target/bun-sys-repository-1.0.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/bun-sys-repository/target/bun-sys-repository-1.0.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/target/bun-sys-service-1.0.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/bun-sys-service/target/bun-sys-service-1.0.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/bun-sys-repository.iml" afterPath="$PROJECT_DIR$/bun-sys-repository/bun-sys-repository.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/pom.xml" afterPath="$PROJECT_DIR$/bun-sys-repository/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/bun-sys-service.iml" afterPath="$PROJECT_DIR$/bun-sys-service/bun-sys-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/pom.xml" afterPath="$PROJECT_DIR$/bun-sys-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/resources/properties/jdbc.properties" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/resources/properties/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/submit.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/submit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bun-sys-api/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bun-sys-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bun-sys-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-biz/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bun-sys-biz/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-comm/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bun-sys-comm/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-comm/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bun-sys-comm/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bun-sys-repository/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bun-sys-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-jdbc.xml" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-jdbc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bun-sys-service/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bun-sys-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bun-sys-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/bun-sys-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
     </list>
     <ignored path="bun.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,8 +73,8 @@
       <file leaf-file-name="submit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/submit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="278">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +95,8 @@
       <file leaf-file-name="NewsFacadeImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="47">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="e#944#945#0" expanded="true" />
                 <element signature="e#971#972#0" expanded="true" />
@@ -89,11 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/properties/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="171">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-jdbc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-jdbc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-70">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -125,18 +151,18 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
+            <state relative-caret-position="19">
               <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="342">
+              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -182,7 +208,6 @@
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/AbstractResponse.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/pom.xml" />
         <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsMapper.java" />
-        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/exception/BunServerException.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/exception/BunServiceException.java" />
         <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java" />
@@ -221,7 +246,9 @@
         <option value="$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-boot.xml" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java" />
         <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" />
+        <option value="$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-jdbc.xml" />
         <option value="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/submit.java" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml" />
       </list>
     </option>
   </component>
@@ -304,6 +331,38 @@
           <option name="myItemId" value="bun-sys-repository" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bun-sys-repository" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="mybatis-generator" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bun-sys-repository" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -314,8 +373,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-9" />
+    <option name="y" value="6" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -602,6 +661,148 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -612,7 +813,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="F:/src/CD" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1147,7 +1348,7 @@
       <workItem from="1524552398485" duration="65000" />
       <workItem from="1524554328802" duration="3279000" />
       <workItem from="1524557643429" duration="3479000" />
-      <workItem from="1524561198508" duration="806000" />
+      <workItem from="1524561198508" duration="4951000" />
     </task>
     <servers />
   </component>
@@ -1161,13 +1362,19 @@
     <history-entry file="submit_test - 2018.04.24 at 17h 24m 06s.xml">
       <configuration name="submit.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="submit_test - 2018.04.24 at 17h 30m 34s.xml">
+      <configuration name="submit.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="submit_test - 2018.04.24 at 17h 32m 09s.xml">
+      <configuration name="submit.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64173000" />
+    <option name="totallyTimeSpent" value="68318000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="6" width="1382" height="744" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1175,14 +1382,14 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036308624" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24281392" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60883796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14075287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.6579378" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.6579378" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1217,14 +1424,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1506,14 +1705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/interceptor/SqlLogInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1535,7 +1726,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
+        <state relative-caret-position="19">
           <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
           <folding />
         </state>
@@ -1543,17 +1734,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config.spring/applicationContext-boot.xml" />
     <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config.spring/applicationContext-jdbc.xml" />
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1570,20 +1750,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/properties/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/submit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="278">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/properties/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-jdbc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="-70">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding />
         </state>
       </provider>

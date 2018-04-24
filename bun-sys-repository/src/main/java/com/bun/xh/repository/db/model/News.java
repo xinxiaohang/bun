@@ -15,9 +15,15 @@ public class News {
 
     private Integer newsType;
 
-    private String newsStatus;
+    private Integer newsStatus;
 
     private String userId;
+
+    private Integer newsSupportTime;
+
+    private Integer newsReportTime;
+
+    private Integer newsTreadTime;
 
     private Integer version;
 
@@ -73,12 +79,12 @@ public class News {
         this.newsType = newsType;
     }
 
-    public String getNewsStatus() {
+    public Integer getNewsStatus() {
         return newsStatus;
     }
 
-    public void setNewsStatus(String newsStatus) {
-        this.newsStatus = newsStatus == null ? null : newsStatus.trim();
+    public void setNewsStatus(Integer newsStatus) {
+        this.newsStatus = newsStatus;
     }
 
     public String getUserId() {
@@ -87,6 +93,30 @@ public class News {
 
     public void setUserId(String userId) {
         this.userId = userId == null ? null : userId.trim();
+    }
+
+    public Integer getNewsSupportTime() {
+        return newsSupportTime;
+    }
+
+    public void setNewsSupportTime(Integer newsSupportTime) {
+        this.newsSupportTime = newsSupportTime;
+    }
+
+    public Integer getNewsReportTime() {
+        return newsReportTime;
+    }
+
+    public void setNewsReportTime(Integer newsReportTime) {
+        this.newsReportTime = newsReportTime;
+    }
+
+    public Integer getNewsTreadTime() {
+        return newsTreadTime;
+    }
+
+    public void setNewsTreadTime(Integer newsTreadTime) {
+        this.newsTreadTime = newsTreadTime;
     }
 
     public Integer getVersion() {

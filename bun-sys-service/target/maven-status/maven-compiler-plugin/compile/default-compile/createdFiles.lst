@@ -1,1 +1,4 @@
 com\bun\xh\service\api\UserFacadeImpl.class
+com\bun\xh\service\convert\ExceptionConvert.class
+com\bun\xh\service\api\CommentFacadeImpl.class
+com\bun\xh\service\api\NewsFacadeImpl.class

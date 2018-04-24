@@ -10,13 +10,16 @@
     <result column="user_id" jdbcType="VARCHAR" property="userId" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="resp_comment_id" jdbcType="VARCHAR" property="respCommentId" />
+    <result column="comm_support_time" jdbcType="INTEGER" property="commSupportTime" />
+    <result column="comm_tread_time" jdbcType="INTEGER" property="commTreadTime" />
+    <result column="comm_report_time" jdbcType="INTEGER" property="commReportTime" />
     <result column="version" jdbcType="INTEGER" property="version" />
     <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
     <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
   </resultMap>
   <sql id="Base_Column_List">
     id, comment_id, comment_desc, comment_time, news_id, user_id, user_name, resp_comment_id, 
-    version, created_at, updated_at
+    comm_support_time, comm_tread_time, comm_report_time, version, created_at, updated_at
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
@@ -31,11 +34,13 @@
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.Comment" useGeneratedKeys="true">
     insert into comment (comment_id, comment_desc, comment_time, 
       news_id, user_id, user_name, 
-      resp_comment_id, version, created_at, 
+      resp_comment_id, comm_support_time, comm_tread_time, 
+      comm_report_time, version, created_at, 
       updated_at)
     values (#{commentId,jdbcType=VARCHAR}, #{commentDesc,jdbcType=VARCHAR}, #{commentTime,jdbcType=TIMESTAMP}, 
       #{newsId,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
-      #{respCommentId,jdbcType=VARCHAR}, #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
+      #{respCommentId,jdbcType=VARCHAR}, #{commSupportTime,jdbcType=INTEGER}, #{commTreadTime,jdbcType=INTEGER}, 
+      #{commReportTime,jdbcType=INTEGER}, #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
       #{updatedAt,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.Comment" useGeneratedKeys="true">
@@ -61,6 +66,15 @@
       </if>
       <if test="respCommentId != null">
         resp_comment_id,
+      </if>
+      <if test="commSupportTime != null">
+        comm_support_time,
+      </if>
+      <if test="commTreadTime != null">
+        comm_tread_time,
+      </if>
+      <if test="commReportTime != null">
+        comm_report_time,
       </if>
       <if test="version != null">
         version,
@@ -93,6 +107,15 @@
       </if>
       <if test="respCommentId != null">
         #{respCommentId,jdbcType=VARCHAR},
+      </if>
+      <if test="commSupportTime != null">
+        #{commSupportTime,jdbcType=INTEGER},
+      </if>
+      <if test="commTreadTime != null">
+        #{commTreadTime,jdbcType=INTEGER},
+      </if>
+      <if test="commReportTime != null">
+        #{commReportTime,jdbcType=INTEGER},
       </if>
       <if test="version != null">
         #{version,jdbcType=INTEGER},
@@ -129,6 +152,15 @@
       <if test="respCommentId != null">
         resp_comment_id = #{respCommentId,jdbcType=VARCHAR},
       </if>
+      <if test="commSupportTime != null">
+        comm_support_time = #{commSupportTime,jdbcType=INTEGER},
+      </if>
+      <if test="commTreadTime != null">
+        comm_tread_time = #{commTreadTime,jdbcType=INTEGER},
+      </if>
+      <if test="commReportTime != null">
+        comm_report_time = #{commReportTime,jdbcType=INTEGER},
+      </if>
       <if test="version != null">
         version = #{version,jdbcType=INTEGER},
       </if>
@@ -150,6 +182,9 @@
       user_id = #{userId,jdbcType=VARCHAR},
       user_name = #{userName,jdbcType=VARCHAR},
       resp_comment_id = #{respCommentId,jdbcType=VARCHAR},
+      comm_support_time = #{commSupportTime,jdbcType=INTEGER},
+      comm_tread_time = #{commTreadTime,jdbcType=INTEGER},
+      comm_report_time = #{commReportTime,jdbcType=INTEGER},
       version = #{version,jdbcType=INTEGER},
       created_at = #{createdAt,jdbcType=TIMESTAMP},
       updated_at = #{updatedAt,jdbcType=TIMESTAMP}

@@ -31,7 +31,7 @@
                         <bean class="com.bun.xh.repository.db.interceptor.MySql5Dialect" />
                     </property>
                 </bean>
-            </list>X
+            </list>
         </property>
     </bean>
 

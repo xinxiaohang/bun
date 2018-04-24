@@ -19,6 +19,12 @@ public class Comment {
 
     private String respCommentId;
 
+    private Integer commSupportTime;
+
+    private Integer commTreadTime;
+
+    private Integer commReportTime;
+
     private Integer version;
 
     private Date createdAt;
@@ -87,6 +93,30 @@ public class Comment {
 
     public void setRespCommentId(String respCommentId) {
         this.respCommentId = respCommentId == null ? null : respCommentId.trim();
+    }
+
+    public Integer getCommSupportTime() {
+        return commSupportTime;
+    }
+
+    public void setCommSupportTime(Integer commSupportTime) {
+        this.commSupportTime = commSupportTime;
+    }
+
+    public Integer getCommTreadTime() {
+        return commTreadTime;
+    }
+
+    public void setCommTreadTime(Integer commTreadTime) {
+        this.commTreadTime = commTreadTime;
+    }
+
+    public Integer getCommReportTime() {
+        return commReportTime;
+    }
+
+    public void setCommReportTime(Integer commReportTime) {
+        this.commReportTime = commReportTime;
     }
 
     public Integer getVersion() {
