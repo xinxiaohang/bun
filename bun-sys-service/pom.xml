@@ -23,5 +23,23 @@
             <groupId>com.bun.xh</groupId>
             <artifactId>bun-sys-biz</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.bun.xh</groupId>
+            <artifactId>bun-sys-comm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bun.xh</groupId>
+            <artifactId>bun-sys-repository</artifactId>
+        </dependency>
+        <!--normal dependencies-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+        <!--test dependencies-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
     </dependencies>
 </project>
