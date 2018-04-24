@@ -13,10 +13,12 @@ import com.bun.xh.vo.ReportRequest;
 import com.bun.xh.vo.ReportResponse;
 import com.bun.xh.vo.SubmitNewsRequest;
 import com.bun.xh.vo.SubmitNewsResponse;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by xin on 2018/4/7.
  */
+@Service
 public class NewsFacadeImpl implements NewsFacade {
 
     public SubmitNewsResponse submitNews(SubmitNewsRequest request) {

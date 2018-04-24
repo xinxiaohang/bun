@@ -26,5 +26,5 @@
         location="classpath:properties/jdbc.properties"/>
 
     <!-- 加载资源文件 -->
-    <import resource="applicationContext-jdbc.xml"/>
+    <import resource="classpath:config/spring/applicationContext-jdbc.xml"/>
 </beans>
