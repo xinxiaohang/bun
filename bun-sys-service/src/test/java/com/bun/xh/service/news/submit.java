@@ -2,6 +2,7 @@ package com.bun.xh.service.news;
 
 import com.bun.xh.api.NewsFacade;
 import com.bun.xh.vo.ApproveRequest;
+import com.bun.xh.vo.SubmitNewsRequest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class submit {
 
     @Test
     public void test(){
-        ApproveRequest approveRequest = new ApproveRequest();
-        newsFacade.approve(approveRequest);
+        SubmitNewsRequest submitNewsRequest = new SubmitNewsRequest();
+        newsFacade.submitNews(submitNewsRequest);
     }
 }

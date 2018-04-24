@@ -38,6 +38,9 @@
     <mybatis.version>3.3.0</mybatis.version>
     <mysql.driver.version>5.1.35</mysql.driver.version>
     <guava.version>18.0</guava.version>
+    <fastjson>1.2.21</fastjson>
+    <log4j.core>2.8.2</log4j.core>
+    <log4j>1.2.17</log4j>
     <!--test properties-->
     <junit.version>4.12</junit.version>
     <spring.test.version>3.2.3.RELEASE</spring.test.version>
@@ -151,6 +154,21 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>${hibernate.validator.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>${fastjson}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>${log4j.core}</version>
+      </dependency>
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>${log4j}</version>
       </dependency>
       <!--data dependencies-->
       <dependency>

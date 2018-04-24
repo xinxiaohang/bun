@@ -11,5 +11,24 @@
 
     <artifactId>bun-sys-biz</artifactId>
 
-
+    <dependencies>
+        <!--self dependencies-->
+        <dependency>
+            <groupId>com.bun.xh</groupId>
+            <artifactId>bun-sys-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bun.xh</groupId>
+            <artifactId>bun-sys-repository</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bun.xh</groupId>
+            <artifactId>bun-sys-comm</artifactId>
+        </dependency>
+        <!--normal dependencies-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+    </dependencies>
 </project>

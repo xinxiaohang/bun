@@ -16,4 +16,16 @@ public enum ResultCodeEnum {
         this.message = message;
         this.eFlag = eFlag;
     }
+
+    public String getCode(){
+        return code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public Integer getEFlag(){
+        return eFlag;
+    }
 }

@@ -1,7 +1,5 @@
 package com.bun.xh.repository.db.interceptor;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.ParameterMapping;
@@ -10,6 +8,7 @@ import org.apache.ibatis.plugin.Intercepts;
 import org.apache.ibatis.plugin.Invocation;
 import org.apache.ibatis.plugin.Plugin;
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.Properties;
@@ -19,7 +18,7 @@ import java.util.StringTokenizer;
         @org.apache.ibatis.plugin.Signature(type = StatementHandler.class, method = "prepare", args = {
                 java.sql.Connection.class }) })
 public class SqlLogInterceptor implements Interceptor{
-    private static Log logger = LogFactory.getLog(SqlLogInterceptor.class);
+    private static Logger logger = Logger.getLogger(SqlLogInterceptor.class);
 
     public Object intercept(Invocation invocation) throws Throwable {
         StatementHandler statementHandler = (StatementHandler) invocation
