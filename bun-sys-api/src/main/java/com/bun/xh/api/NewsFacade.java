@@ -10,8 +10,8 @@ import com.bun.xh.vo.OverruleRequest;
 import com.bun.xh.vo.OverruleResponse;
 import com.bun.xh.vo.PublishNewsRequest;
 import com.bun.xh.vo.PublishNewsResponse;
-import com.bun.xh.vo.ReportRequest;
-import com.bun.xh.vo.ReportResponse;
+import com.bun.xh.vo.ReportNewsRequest;
+import com.bun.xh.vo.ReportNewsResponse;
 import com.bun.xh.vo.SubmitNewsRequest;
 import com.bun.xh.vo.SubmitNewsResponse;
 
@@ -28,7 +28,7 @@ public interface NewsFacade {
 
     OverruleResponse overrule(OverruleRequest request)throws BunServerException,BunServiceException;
 
-    ReportResponse report(ReportRequest request)throws BunServerException,BunServiceException;
+    ReportNewsResponse reportNews(ReportNewsRequest request)throws BunServerException,BunServiceException;
 
     DeleteNewsResponse deleteNews(DeleteNewsRequest request)throws BunServerException,BunServiceException;
 }

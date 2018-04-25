@@ -2,6 +2,7 @@ package com.bun.xh.service.api;
 
 import com.alibaba.fastjson.JSON;
 import com.bun.xh.api.NewsFacade;
+import com.bun.xh.biz.newshandler.PublishNewsHandler;
 import com.bun.xh.biz.newshandler.SubmitNewsHandler;
 import com.bun.xh.exception.BunServerException;
 import com.bun.xh.exception.BunServiceException;
@@ -14,8 +15,8 @@ import com.bun.xh.vo.OverruleRequest;
 import com.bun.xh.vo.OverruleResponse;
 import com.bun.xh.vo.PublishNewsRequest;
 import com.bun.xh.vo.PublishNewsResponse;
-import com.bun.xh.vo.ReportRequest;
-import com.bun.xh.vo.ReportResponse;
+import com.bun.xh.vo.ReportNewsRequest;
+import com.bun.xh.vo.ReportNewsResponse;
 import com.bun.xh.vo.SubmitNewsRequest;
 import com.bun.xh.vo.SubmitNewsResponse;
 
@@ -34,6 +35,9 @@ public class NewsFacadeImpl implements NewsFacade {
     @Autowired
     private SubmitNewsHandler submitNewsHandler;
 
+    @Autowired
+    private PublishNewsHandler publishNewsHandler;
+
     public SubmitNewsResponse submitNews(SubmitNewsRequest request) throws BunServerException,BunServiceException{
         SubmitNewsResponse response = new SubmitNewsResponse();
         try {
@@ -48,8 +52,19 @@ public class NewsFacadeImpl implements NewsFacade {
         return response;
     }
 
-    public PublishNewsResponse publishNews(PublishNewsRequest request) {
-        return null;
+    public PublishNewsResponse publishNews(PublishNewsRequest request) throws BunServerException,BunServiceException{
+        PublishNewsResponse response = new PublishNewsResponse();
+
+        try {
+            LOG.info("新闻发布开始|请求报文" + JSON.toJSONString(request));
+            response = publishNewsHandler.publishNews(request);
+            LOG.info("新闻发布结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("发布新闻异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
     }
 
     public ApproveResponse approve(ApproveRequest request) {
@@ -60,7 +75,7 @@ public class NewsFacadeImpl implements NewsFacade {
         return null;
     }
 
-    public ReportResponse report(ReportRequest request) {
+    public ReportNewsResponse reportNews(ReportNewsRequest request) {
         return null;
     }
 
