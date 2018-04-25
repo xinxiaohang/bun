@@ -30,30 +30,41 @@ public class SubmitNewsHandler extends AbstractNewsHandler{
             return response;
         }
 
-        //构造结构体
+        //构造结构体,提交新闻
         NewsLogDTO newsLogDTO = null;
         makeNewsAndLog(newsDTO,newsLogDTO,request);
 
-        summit(newsDTO,newsLogDTO);
-
         response.setResultCode(ResultCodeEnum.SUCCESS.getCode());
+        response.setResultMessage(ResultCodeEnum.SUCCESS.getMessage());
         return response;
     }
 
     //构造结构体
     private void makeNewsAndLog(
             NewsDTO newsDTO, NewsLogDTO newsLogDTO,SubmitNewsRequest request){
-        newsDTO = new NewsDTO(request.getNewsId(),
-                        request.getNewTitle(),
-                        request.getNewDesc(),
-                        request.getNewsPic(),
-                        null,
-                        NewsStatusEnum.SUBMIT.getStatus(),
-                        request.getUserId(),
-                        0,0,0,0);
-        newsLogDTO = new NewsLogDTO(request.getNewsId(),
-                0,0,new Date(),
-                null,null,null,
-                0);
+        newsDTO = new NewsDTO();
+        newsDTO.setNewsId(request.getNewsId());
+        newsDTO.setNewsTitle(request.getNewTitle());
+        newsDTO.setNewDesc(request.getNewDesc());
+        newsDTO.setNewsPic(request.getNewsPic());
+        newsDTO.setNewsType(null);
+        newsDTO.setNewsStatus(NewsStatusEnum.SUBMIT.getStatus());
+        newsDTO.setUserId(request.getUserId());
+        newsDTO.setNewsReportTime(0);
+        newsDTO.setNewsTreadTime(0);
+        newsDTO.setNewsSupportTime(0);
+        newsDTO.setVersion(0);
+
+        newsLogDTO = new NewsLogDTO();
+        newsLogDTO.setNewsId(request.getNewsId());
+        newsLogDTO.setFromStatus(0);
+        newsLogDTO.setToStatus(0);
+        newsLogDTO.setOptTime(new Date());
+        newsLogDTO.setCheckUserId(null);
+        newsLogDTO.setCheckUserName(null);
+        newsLogDTO.setOverruleReason(null);
+        newsLogDTO.setVersion(0);
+
+        summit(newsDTO,newsLogDTO);
     };
 }

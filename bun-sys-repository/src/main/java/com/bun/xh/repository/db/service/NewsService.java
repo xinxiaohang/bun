@@ -24,11 +24,11 @@ public class NewsService {
     }
 
     public NewsDTO selectNewsByNewsId(String newsId){
-        NewsDTO newsDTO = new NewsDTO();
         News news = newsMapper.selectNewsByNewsId(newsId);
-        if(StringUtils.isEmpty(news)){
-            return newsDTO;
+        if(null == news){
+            return null;
         }
+        NewsDTO newsDTO = new NewsDTO();
         BeanUtils.copyProperties(news,newsDTO);
         return newsDTO;
     }
