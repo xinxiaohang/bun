@@ -1,5 +1,7 @@
 package com.bun.xh.api;
 
+import com.bun.xh.exception.BunServerException;
+import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.vo.ApproveRequest;
 import com.bun.xh.vo.ApproveResponse;
 import com.bun.xh.vo.DeleteNewsRequest;
@@ -18,15 +20,15 @@ import com.bun.xh.vo.SubmitNewsResponse;
  */
 public interface NewsFacade {
 
-    SubmitNewsResponse submitNews(SubmitNewsRequest request);
+    SubmitNewsResponse submitNews(SubmitNewsRequest request) throws BunServerException,BunServiceException;
 
-    PublishNewsResponse publishNews(PublishNewsRequest request);
+    PublishNewsResponse publishNews(PublishNewsRequest request)throws BunServerException,BunServiceException;
 
-    ApproveResponse approve(ApproveRequest request);
+    ApproveResponse approve(ApproveRequest request)throws BunServerException,BunServiceException;
 
-    OverruleResponse overrule(OverruleRequest request);
+    OverruleResponse overrule(OverruleRequest request)throws BunServerException,BunServiceException;
 
-    ReportResponse report(ReportRequest request);
+    ReportResponse report(ReportRequest request)throws BunServerException,BunServiceException;
 
-    DeleteNewsResponse deleteNews(DeleteNewsRequest request);
+    DeleteNewsResponse deleteNews(DeleteNewsRequest request)throws BunServerException,BunServiceException;
 }

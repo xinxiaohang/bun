@@ -2,14 +2,11 @@ package com.bun.xh.biz.newshandler;
 
 import com.bun.xh.comm.enums.NewsStatusEnum;
 import com.bun.xh.enums.ResultCodeEnum;
-import com.bun.xh.repository.db.model.NewsLog;
 import com.bun.xh.repository.dto.NewsDTO;
 import com.bun.xh.repository.dto.NewsLogDTO;
 import com.bun.xh.vo.SubmitNewsRequest;
 import com.bun.xh.vo.SubmitNewsResponse;
-import com.mysql.fabric.Response;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.Date;

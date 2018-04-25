@@ -11,5 +11,12 @@
 
     <artifactId>bun-sys-comm</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>

@@ -1,5 +1,8 @@
 package com.bun.xh.enums;
 
+import org.springframework.util.StringUtils;
+
+
 /**
  * Created by xin on 2018/4/6.
  */
@@ -29,6 +32,19 @@ public enum  ResultCodeEnum {
     }
 
     public Integer getEFlag(){
+        return eFlag;
+    }
+
+    public static Integer getEFlagByCode(String code){
+        Integer eFlag = 0;
+        if(StringUtils.isEmpty(code)){
+            ResultCodeEnum[] enums = ResultCodeEnum.values();
+            for(ResultCodeEnum codeEnum: enums){
+                if(code.equals(codeEnum.getCode())){
+                    eFlag = codeEnum.eFlag;
+                }
+            }
+        }
         return eFlag;
     }
 }
