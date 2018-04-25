@@ -38,7 +38,7 @@
     <!-- 扫描mapper接口，生成代理注入到spring容器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
-        <property name="basePackage" value="me.ele.fin.wallet.forfeit.repository.db.dao" />
+        <property name="basePackage" value="com.bun.xh.repository.db.dao" />
     </bean>
 
     <!-- 声明事务管理器 -->

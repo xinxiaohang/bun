@@ -21,12 +21,7 @@
     id, news_id, news_title, new_desc, news_pic, news_type, news_status, user_id, news_support_time, 
     news_report_time, news_tread_time, version, created_at, updated_at
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from news
-    where id = #{id,jdbcType=BIGINT}
-  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from news
     where id = #{id,jdbcType=BIGINT}
@@ -190,4 +185,18 @@
       updated_at = #{updatedAt,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from news
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="selectNewsByNewsId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from news
+    where news_id = #{newsId,jdbcType=VARCHAR}
+  </select>
 </mapper>

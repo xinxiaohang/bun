@@ -1,0 +1,4 @@
+package com.bun.xh.repository.dto;
+
+public class NewsLogDTO {
+}
