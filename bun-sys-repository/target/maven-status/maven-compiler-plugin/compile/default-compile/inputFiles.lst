@@ -1,10 +1,13 @@
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\interceptor\PaginationInterceptor.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\interceptor\MySql5Dialect.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\service\NewsService.java
+D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\dto\NewsLogDTO.java
+D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\dto\UserDTO.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\interceptor\AbstractDialect.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\dao\NewsLogMapper.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\model\NewsLog.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\dao\NewsMapper.java
+D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\dto\CommentDTO.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\model\User.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\interceptor\SqlLogInterceptor.java
 D:\bun-sys\bun-sys-repository\src\main\java\com\bun\xh\repository\db\service\UserService.java

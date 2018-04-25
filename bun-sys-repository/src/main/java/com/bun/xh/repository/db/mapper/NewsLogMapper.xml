@@ -4,8 +4,8 @@
   <resultMap id="BaseResultMap" type="com.bun.xh.repository.db.model.NewsLog">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="news_id" jdbcType="VARCHAR" property="newsId" />
-    <result column="from_status" jdbcType="VARCHAR" property="fromStatus" />
-    <result column="to_status" jdbcType="VARCHAR" property="toStatus" />
+    <result column="from_status" jdbcType="INTEGER" property="fromStatus" />
+    <result column="to_status" jdbcType="INTEGER" property="toStatus" />
     <result column="opt_time" jdbcType="TIMESTAMP" property="optTime" />
     <result column="check_user_name" jdbcType="VARCHAR" property="checkUserName" />
     <result column="check_user_id" jdbcType="VARCHAR" property="checkUserId" />

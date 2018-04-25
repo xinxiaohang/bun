@@ -20,4 +20,12 @@ public enum NewsStatusEnum {
         this.status = status;
         this.statusDesc = statusDesc;
     }
+
+    public Integer getStatus(){
+        return status;
+    }
+
+    public String getStatusDesc(){
+        return statusDesc;
+    }
 }

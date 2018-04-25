@@ -17,6 +17,12 @@ public class NewsService {
     @Autowired
     private NewsMapper newsMapper;
 
+    public void insert(NewsDTO newsDTO){
+        News news = new News();
+        BeanUtils.copyProperties(newsDTO,news);
+        newsMapper.insert(news);
+    }
+
     public NewsDTO selectNewsByNewsId(String newsId){
         NewsDTO newsDTO = new NewsDTO();
         News news = newsMapper.selectNewsByNewsId(newsId);

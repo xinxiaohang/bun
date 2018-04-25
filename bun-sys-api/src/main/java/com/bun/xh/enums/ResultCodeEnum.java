@@ -3,9 +3,12 @@ package com.bun.xh.enums;
 /**
  * Created by xin on 2018/4/6.
  */
-public enum ResultCodeEnum {
+public enum  ResultCodeEnum {
 
-    SUCCESS("0000","操作成功",0);
+    SUCCESS("0000","操作成功",0),
+
+    //status
+    STATUS_ERROR("1000","新闻状态不合法",0);
 
     String code;
     String message;

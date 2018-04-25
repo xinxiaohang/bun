@@ -7,9 +7,9 @@ public class NewsLog {
 
     private String newsId;
 
-    private String fromStatus;
+    private Integer fromStatus;
 
-    private String toStatus;
+    private Integer toStatus;
 
     private Date optTime;
 
@@ -41,20 +41,20 @@ public class NewsLog {
         this.newsId = newsId == null ? null : newsId.trim();
     }
 
-    public String getFromStatus() {
+    public Integer getFromStatus() {
         return fromStatus;
     }
 
-    public void setFromStatus(String fromStatus) {
-        this.fromStatus = fromStatus == null ? null : fromStatus.trim();
+    public void setFromStatus(Integer fromStatus) {
+        this.fromStatus = fromStatus == null ? null : fromStatus;
     }
 
-    public String getToStatus() {
+    public Integer getToStatus() {
         return toStatus;
     }
 
-    public void setToStatus(String toStatus) {
-        this.toStatus = toStatus == null ? null : toStatus.trim();
+    public void setToStatus(Integer toStatus) {
+        this.toStatus = toStatus == null ? null : toStatus;
     }
 
     public Date getOptTime() {

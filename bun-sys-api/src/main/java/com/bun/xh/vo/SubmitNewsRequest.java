@@ -19,4 +19,6 @@ public class SubmitNewsRequest {
     private String newDesc;
     @NotEmpty
     private String newsPic;
+    @NotEmpty
+    private String userId;
 }

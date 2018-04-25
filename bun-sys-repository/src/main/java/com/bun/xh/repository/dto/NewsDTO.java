@@ -1,15 +1,12 @@
 package com.bun.xh.repository.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import com.bun.xh.repository.db.model.News;
 
 import java.util.Date;
 
 /**
  * Created by xin on 2018/4/22.
  */
-@Getter
-@Setter
 public class NewsDTO {
 
     private String newsId;
@@ -22,9 +19,36 @@ public class NewsDTO {
 
     private Integer newsType;
 
-    private String newsStatus;
+    private Integer newsStatus;
 
     private String userId;
+
+    private Integer newsSupportTime;
+
+    private Integer newsReportTime;
+
+    private Integer newsTreadTime;
+
+    private Integer version;
+
+    public NewsDTO(){};
+
+    public NewsDTO(String newsId, String newsTitle, String newDesc,
+                   String newsPic, Integer newsType, Integer newsStatus,
+                   String userId, Integer newsSupportTime, Integer newsReportTime,
+                   Integer newsTreadTime, Integer version) {
+        this.newsId = newsId;
+        this.newsTitle = newsTitle;
+        this.newDesc = newDesc;
+        this.newsPic = newsPic;
+        this.newsType = newsType;
+        this.newsStatus = newsStatus;
+        this.userId = userId;
+        this.newsSupportTime = newsSupportTime;
+        this.newsReportTime = newsReportTime;
+        this.newsTreadTime = newsTreadTime;
+        this.version = version;
+    }
 
     public String getNewsId() {
         return newsId;
@@ -66,12 +90,12 @@ public class NewsDTO {
         this.newsType = newsType;
     }
 
-    public String getNewsStatus() {
+    public Integer getNewsStatus() {
         return newsStatus;
     }
 
-    public void setNewsStatus(String newsStatus) {
-        this.newsStatus = newsStatus == null ? null : newsStatus.trim();
+    public void setNewsStatus(Integer newsStatus) {
+        this.newsStatus = newsStatus;
     }
 
     public String getUserId() {
@@ -80,5 +104,37 @@ public class NewsDTO {
 
     public void setUserId(String userId) {
         this.userId = userId == null ? null : userId.trim();
+    }
+
+    public Integer getNewsSupportTime() {
+        return newsSupportTime;
+    }
+
+    public void setNewsSupportTime(Integer newsSupportTime) {
+        this.newsSupportTime = newsSupportTime;
+    }
+
+    public Integer getNewsReportTime() {
+        return newsReportTime;
+    }
+
+    public void setNewsReportTime(Integer newsReportTime) {
+        this.newsReportTime = newsReportTime;
+    }
+
+    public Integer getNewsTreadTime() {
+        return newsTreadTime;
+    }
+
+    public void setNewsTreadTime(Integer newsTreadTime) {
+        this.newsTreadTime = newsTreadTime;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
     }
 }

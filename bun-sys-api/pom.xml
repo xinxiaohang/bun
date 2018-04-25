@@ -14,11 +14,6 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <dependencies>
-        <!--self dependencies-->
-        <dependency>
-            <groupId>com.bun.xh</groupId>
-            <artifactId>bun-sys-api</artifactId>
-        </dependency>
         <!--normal dependencies-->
         <dependency>
             <groupId>org.projectlombok</groupId>
