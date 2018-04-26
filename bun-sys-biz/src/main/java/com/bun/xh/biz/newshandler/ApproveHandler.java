@@ -2,12 +2,10 @@ package com.bun.xh.biz.newshandler;
 
 import com.bun.xh.comm.enums.NewsStatusEnum;
 import com.bun.xh.enums.ResultCodeEnum;
-import com.bun.xh.repository.db.model.News;
-import com.bun.xh.repository.db.model.NewsLog;
 import com.bun.xh.repository.dto.NewsDTO;
 import com.bun.xh.repository.dto.NewsLogDTO;
-import com.bun.xh.vo.ApproveRequest;
-import com.bun.xh.vo.ApproveResponse;
+import com.bun.xh.vo.ApproveNewsRequest;
+import com.bun.xh.vo.ApproveNewsResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -18,19 +16,19 @@ import java.util.List;
 @Service
 public class ApproveHandler extends AbstractNewsHandler{
 
-    public ApproveResponse approve(ApproveRequest request){
-        ApproveResponse response = new ApproveResponse();
+    public ApproveNewsResponse approveNews(ApproveNewsRequest request){
+        ApproveNewsResponse response = new ApproveNewsResponse();
 
         List<NewsDTO> newsDTOs = selectNewsByNewsIds(request.getNewsIds());
         if(CollectionUtils.isEmpty(newsDTOs)){
-            response = (ApproveResponse)buildAbstractResponse(response, ResultCodeEnum.NEWS_LIST_NULL_ERROR);
+            response = (ApproveNewsResponse)buildAbstractResponse(response, ResultCodeEnum.NEWS_LIST_NULL_ERROR);
             return response;
         }
 
         List<NewsLogDTO> newsLogDTOs = new ArrayList<NewsLogDTO>();
+        List<NewsDTO> changeNews = new ArrayList<NewsDTO>();
         for(NewsDTO newsDTO : newsDTOs ){
             newsDTO.setNewsStatus(NewsStatusEnum.APPROVE.getStatus());
-            newsDTOs.add(newsDTO);
 
             NewsLogDTO newsLogDTO = new NewsLogDTO();
             newsLogDTO.setNewsId(newsDTO.getNewsId());
@@ -43,10 +41,11 @@ public class ApproveHandler extends AbstractNewsHandler{
             newsLogDTO.setVersion(0);
             newsLogDTOs.add(newsLogDTO);
         }
+        changeNews.addAll(newsDTOs);
 
         approveChange(newsDTOs,newsLogDTOs);
 
-        response = (ApproveResponse)buildAbstractResponse(response,ResultCodeEnum.SUCCESS);
+        response = (ApproveNewsResponse)buildAbstractResponse(response,ResultCodeEnum.SUCCESS);
         return response;
     }
 }

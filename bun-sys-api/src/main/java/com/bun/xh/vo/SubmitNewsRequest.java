@@ -2,6 +2,7 @@ package com.bun.xh.vo;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.EAN;
 import org.hibernate.validator.constraints.NotEmpty;
 
 /**
@@ -15,6 +16,8 @@ public class SubmitNewsRequest {
     private String newsId;
     @NotEmpty
     private String newTitle;
+    @NotEmpty
+    private Integer newsType;
     @NotEmpty
     private String newDesc;
     @NotEmpty

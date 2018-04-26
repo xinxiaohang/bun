@@ -6,12 +6,12 @@ import com.bun.xh.biz.newshandler.*;
 import com.bun.xh.exception.BunServerException;
 import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.service.convert.ExceptionConvert;
-import com.bun.xh.vo.ApproveRequest;
-import com.bun.xh.vo.ApproveResponse;
+import com.bun.xh.vo.ApproveNewsRequest;
+import com.bun.xh.vo.ApproveNewsResponse;
 import com.bun.xh.vo.DeleteNewsRequest;
 import com.bun.xh.vo.DeleteNewsResponse;
-import com.bun.xh.vo.OverruleRequest;
-import com.bun.xh.vo.OverruleResponse;
+import com.bun.xh.vo.OverruleNewsRequest;
+import com.bun.xh.vo.OverruleNewsResponse;
 import com.bun.xh.vo.PublishNewsRequest;
 import com.bun.xh.vo.PublishNewsResponse;
 import com.bun.xh.vo.ReportNewsRequest;
@@ -78,12 +78,12 @@ public class NewsFacadeImpl implements NewsFacade {
         return response;
     }
 
-    public ApproveResponse approve(ApproveRequest request) throws BunServerException,BunServiceException {
-        ApproveResponse response = new ApproveResponse();
+    public ApproveNewsResponse approveNews(ApproveNewsRequest request) throws BunServerException,BunServiceException {
+        ApproveNewsResponse response = new ApproveNewsResponse();
 
         try {
             LOG.info("新闻审核通过开始|请求报文" + JSON.toJSONString(request));
-            response = approveHandler.approve(request);
+            response = approveHandler.approveNews(request);
             LOG.info("新闻审核通过结束|返回报文" + JSON.toJSONString(response));
             ExceptionConvert.CreateException(response);
         }catch (Exception e){
@@ -93,12 +93,12 @@ public class NewsFacadeImpl implements NewsFacade {
         return response;
     }
 
-    public OverruleResponse overrule(OverruleRequest request) throws BunServerException,BunServiceException{
-        OverruleResponse response = new OverruleResponse();
+    public OverruleNewsResponse overruleNews(OverruleNewsRequest request) throws BunServerException,BunServiceException{
+        OverruleNewsResponse response = new OverruleNewsResponse();
 
         try {
             LOG.info("新闻审核不通过开始|请求报文" + JSON.toJSONString(request));
-            response = overruleHandler.overrule(request);
+            response = overruleHandler.overruleNews(request);
             LOG.info("新闻审核不通过结束|返回报文" + JSON.toJSONString(response));
             ExceptionConvert.CreateException(response);
         }catch (Exception e){

@@ -33,7 +33,7 @@ public class SubmitNewsHandler extends AbstractNewsHandler{
 
         //构造结构体,提交新闻
         NewsLogDTO newsLogDTO = null;
-        summitCons(newsDTO,newsLogDTO,request);
+        summitCons(request);
 
         response = (SubmitNewsResponse)buildAbstractResponse(
                 response,ResultCodeEnum.SUCCESS);
@@ -41,14 +41,13 @@ public class SubmitNewsHandler extends AbstractNewsHandler{
     }
 
     //构造结构体
-    private void summitCons(
-            NewsDTO newsDTO, NewsLogDTO newsLogDTO,SubmitNewsRequest request){
-        newsDTO = new NewsDTO();
+    private void summitCons(SubmitNewsRequest request){
+        NewsDTO newsDTO = new NewsDTO();
         newsDTO.setNewsId(request.getNewsId());
         newsDTO.setNewsTitle(request.getNewTitle());
         newsDTO.setNewDesc(request.getNewDesc());
         newsDTO.setNewsPic(request.getNewsPic());
-        newsDTO.setNewsType(null);
+        newsDTO.setNewsType(request.getNewsType());
         newsDTO.setNewsStatus(NewsStatusEnum.SUBMIT.getStatus());
         newsDTO.setUserId(request.getUserId());
         newsDTO.setNewsReportTime(0);
@@ -56,7 +55,7 @@ public class SubmitNewsHandler extends AbstractNewsHandler{
         newsDTO.setNewsSupportTime(0);
         newsDTO.setVersion(0);
 
-        newsLogDTO = new NewsLogDTO();
+        NewsLogDTO newsLogDTO = new NewsLogDTO();
         newsLogDTO.setNewsId(request.getNewsId());
         newsLogDTO.setFromStatus(NewsStatusEnum.SUBMIT.getStatus());
         newsLogDTO.setToStatus(NewsStatusEnum.SUBMIT.getStatus());

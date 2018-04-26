@@ -10,15 +10,7 @@ public interface NewsMapper {
 
     int insert(News record);
 
-    int insertSelective(News record);
-
-    int updateByPrimaryKeySelective(News record);
-
-    int updateByPrimaryKey(News record);
-
     int updateByNewsId(News record);
-
-    News selectByPrimaryKey(Long id);
 
     News selectNewsByNewsId(@Param("newsId") String newsId);
 

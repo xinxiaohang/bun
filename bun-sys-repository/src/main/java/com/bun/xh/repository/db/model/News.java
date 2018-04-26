@@ -23,6 +23,8 @@ public class News {
 
     private Integer newsReportTime;
 
+    private String newsReportReason;
+
     private Integer newsTreadTime;
 
     private Integer version;
@@ -101,6 +103,14 @@ public class News {
 
     public void setNewsSupportTime(Integer newsSupportTime) {
         this.newsSupportTime = newsSupportTime;
+    }
+
+    public String getNewsReportReason() {
+        return newsReportReason;
+    }
+
+    public void setnewsReportReason(String newsReportReason) {
+        this.newsReportReason = newsReportReason;
     }
 
     public Integer getNewsReportTime() {
