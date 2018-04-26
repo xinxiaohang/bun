@@ -23,7 +23,7 @@ public class PublishNewsHandler extends AbstractNewsHandler{
         //判断是否为空
         if(StringUtils.isEmpty(newsDTO)){
             response = (PublishNewsResponse)buildAbstractResponse(
-                    response,ResultCodeEnum.NEWS_SELECT_NULL_ERROR);
+                    response,ResultCodeEnum.NEWS_NULL_ERROR);
             return response;
         }
 

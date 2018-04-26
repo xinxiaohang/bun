@@ -33,7 +33,7 @@
       opt_time, check_user_name, check_user_id, 
       overrule_reason, version, created_at, 
       updated_at)
-    values (#{newsId,jdbcType=VARCHAR}, #{fromStatus,jdbcType=VARCHAR}, #{toStatus,jdbcType=VARCHAR}, 
+    values (#{newsId,jdbcType=VARCHAR}, #{fromStatus,jdbcType=INTEGER}, #{toStatus,jdbcType=INTEGER},
       #{optTime,jdbcType=TIMESTAMP}, #{checkUserName,jdbcType=VARCHAR}, #{checkUserId,jdbcType=VARCHAR}, 
       #{overruleReason,jdbcType=VARCHAR}, #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
       #{updatedAt,jdbcType=TIMESTAMP})
@@ -77,10 +77,10 @@
         #{newsId,jdbcType=VARCHAR},
       </if>
       <if test="fromStatus != null">
-        #{fromStatus,jdbcType=VARCHAR},
+        #{fromStatus,jdbcType=INTEGER},
       </if>
       <if test="toStatus != null">
-        #{toStatus,jdbcType=VARCHAR},
+        #{toStatus,jdbcType=INTEGER},
       </if>
       <if test="optTime != null">
         #{optTime,jdbcType=TIMESTAMP},
@@ -112,10 +112,10 @@
         news_id = #{newsId,jdbcType=VARCHAR},
       </if>
       <if test="fromStatus != null">
-        from_status = #{fromStatus,jdbcType=VARCHAR},
+        from_status = #{fromStatus,jdbcType=INTEGER},
       </if>
       <if test="toStatus != null">
-        to_status = #{toStatus,jdbcType=VARCHAR},
+        to_status = #{toStatus,jdbcType=INTEGER},
       </if>
       <if test="optTime != null">
         opt_time = #{optTime,jdbcType=TIMESTAMP},
@@ -144,8 +144,8 @@
   <update id="updateByPrimaryKey" parameterType="com.bun.xh.repository.db.model.NewsLog">
     update news_log
     set news_id = #{newsId,jdbcType=VARCHAR},
-      from_status = #{fromStatus,jdbcType=VARCHAR},
-      to_status = #{toStatus,jdbcType=VARCHAR},
+      from_status = #{fromStatus,jdbcType=INTEGER},
+      to_status = #{toStatus,jdbcType=INTEGER},
       opt_time = #{optTime,jdbcType=TIMESTAMP},
       check_user_name = #{checkUserName,jdbcType=VARCHAR},
       check_user_id = #{checkUserId,jdbcType=VARCHAR},

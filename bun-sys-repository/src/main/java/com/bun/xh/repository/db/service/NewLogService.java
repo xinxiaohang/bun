@@ -6,6 +6,9 @@ import com.bun.xh.repository.dto.NewsLogDTO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
+
+import java.util.List;
 
 /**
  * Created by xin on 2018/4/7.
@@ -20,5 +23,16 @@ public class NewLogService {
         NewsLog newsLog = new NewsLog();
         BeanUtils.copyProperties(newsLogDTO,newsLog);
         newsLogMapper.insert(newsLog);
+    }
+
+    public void insertLogs(List<NewsLogDTO> newsLogDTOs){
+        if(CollectionUtils.isEmpty(newsLogDTOs)){
+            return;
+        }
+        for (NewsLogDTO newsLogDTO : newsLogDTOs){
+            NewsLog newsLog = new NewsLog();
+            BeanUtils.copyProperties(newsLogDTO,newsLog);
+            newsLogMapper.insert(newsLog);
+        }
     }
 }

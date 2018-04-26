@@ -224,4 +224,15 @@
     where user_id = #{userId,jdbcType=VARCHAR}
     and news_id = #{newsId,jdbcType=VARCHAR}
   </select>
+
+  <select id="selectNewsByNewsIds" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from news
+    where news_id in
+    <foreach collection="newsIds" item="newsId" open="("
+             close=")" separator=",">
+      #{newsId,jdbcType=VARCHAR}
+    </foreach>
+  </select>
 </mapper>

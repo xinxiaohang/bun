@@ -14,7 +14,8 @@ public enum  ResultCodeEnum {
     NEWS_STATUS_ERROR("1000","新闻状态不合法",0),
 
     //查询错误
-    NEWS_SELECT_NULL_ERROR("2000","新闻不存在",0);
+    NEWS_NULL_ERROR("2000","新闻不存在",0),
+    NEWS_LIST_NULL_ERROR("2001","新闻列表不存在",0);
 
     String code;
     String message;
