@@ -186,6 +186,23 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
 
+  <update id="updateByNewsId" parameterType="com.bun.xh.repository.db.model.News">
+    update news
+    set
+      news_title = #{newsTitle,jdbcType=VARCHAR},
+      new_desc = #{newDesc,jdbcType=VARCHAR},
+      news_pic = #{newsPic,jdbcType=VARCHAR},
+      news_type = #{newsType,jdbcType=INTEGER},
+      news_status = #{newsStatus,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=VARCHAR},
+      news_support_time = #{newsSupportTime,jdbcType=INTEGER},
+      news_report_time = #{newsReportTime,jdbcType=INTEGER},
+      news_tread_time = #{newsTreadTime,jdbcType=INTEGER},
+      version = version + 1
+    where news_id = #{newsId,jdbcType=VARCHAR}
+    and version = #{version,jdbcType=INTEGER}
+  </update>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
@@ -198,5 +215,13 @@
     <include refid="Base_Column_List" />
     from news
     where news_id = #{newsId,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectNewsByUserIdAndNewId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from news
+    where user_id = #{userId,jdbcType=VARCHAR}
+    and news_id = #{newsId,jdbcType=VARCHAR}
   </select>
 </mapper>

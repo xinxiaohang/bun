@@ -12,7 +12,9 @@ public class Submit extends AbstractNews {
 
     @Test
     public void test() throws BunServerException, BunServiceException {
-        SubmitNewsRequest submitNewsRequest = buildSubmitNewsRequest();
+        String newsId = String.valueOf(System.currentTimeMillis());
+        String userId = "测试人";
+        SubmitNewsRequest submitNewsRequest = buildSubmitNewsRequest(newsId,userId);
         SubmitNewsResponse response = newsFacade.submitNews(submitNewsRequest);
         Assert.assertEquals(ResultCodeEnum.SUCCESS.getCode(),response.getResultCode());
     }

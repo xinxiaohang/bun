@@ -10,8 +10,11 @@ public enum  ResultCodeEnum {
 
     SUCCESS("0000","操作成功",0),
 
-    //status
-    STATUS_ERROR("1000","新闻状态不合法",0);
+    //状态错误
+    NEWS_STATUS_ERROR("1000","新闻状态不合法",0),
+
+    //查询错误
+    NEWS_SELECT_NULL_ERROR("2000","新闻不存在",0);
 
     String code;
     String message;

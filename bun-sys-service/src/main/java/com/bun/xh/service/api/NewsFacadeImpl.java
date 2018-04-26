@@ -2,8 +2,7 @@ package com.bun.xh.service.api;
 
 import com.alibaba.fastjson.JSON;
 import com.bun.xh.api.NewsFacade;
-import com.bun.xh.biz.newshandler.PublishNewsHandler;
-import com.bun.xh.biz.newshandler.SubmitNewsHandler;
+import com.bun.xh.biz.newshandler.*;
 import com.bun.xh.exception.BunServerException;
 import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.service.convert.ExceptionConvert;
@@ -38,6 +37,18 @@ public class NewsFacadeImpl implements NewsFacade {
     @Autowired
     private PublishNewsHandler publishNewsHandler;
 
+    @Autowired
+    private ApproveHandler approveHandler;
+
+    @Autowired
+    private OverruleHandler overruleHandler;
+
+    @Autowired
+    private ReportNewsHandler reportNewsHandler;
+
+    @Autowired
+    private DeleteNewsHandler deleteNewsHandler;
+
     public SubmitNewsResponse submitNews(SubmitNewsRequest request) throws BunServerException,BunServiceException{
         SubmitNewsResponse response = new SubmitNewsResponse();
         try {
@@ -67,19 +78,63 @@ public class NewsFacadeImpl implements NewsFacade {
         return response;
     }
 
-    public ApproveResponse approve(ApproveRequest request) {
-        return null;
+    public ApproveResponse approve(ApproveRequest request) throws BunServerException,BunServiceException {
+        ApproveResponse response = new ApproveResponse();
+
+        try {
+            LOG.info("新闻审核通过开始|请求报文" + JSON.toJSONString(request));
+            response = approveHandler.approve(request);
+            LOG.info("新闻审核通过结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("新闻审核通过异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
     }
 
-    public OverruleResponse overrule(OverruleRequest request) {
-        return null;
+    public OverruleResponse overrule(OverruleRequest request) throws BunServerException,BunServiceException{
+        OverruleResponse response = new OverruleResponse();
+
+        try {
+            LOG.info("新闻审核不通过开始|请求报文" + JSON.toJSONString(request));
+            response = overruleHandler.overrule(request);
+            LOG.info("新闻审核不通过结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("新闻审核不通过异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
     }
 
-    public ReportNewsResponse reportNews(ReportNewsRequest request) {
-        return null;
+    public ReportNewsResponse reportNews(ReportNewsRequest request)throws BunServerException,BunServiceException {
+        ReportNewsResponse response = new ReportNewsResponse();
+
+        try {
+            LOG.info("举报新闻开始|请求报文" + JSON.toJSONString(request));
+            response = reportNewsHandler.reportNews(request);
+            LOG.info("举报新闻结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("举报新闻异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
     }
 
-    public DeleteNewsResponse deleteNews(DeleteNewsRequest request) {
-        return null;
+    public DeleteNewsResponse deleteNews(DeleteNewsRequest request)throws BunServerException,BunServiceException {
+        DeleteNewsResponse response = new DeleteNewsResponse();
+
+        try {
+            LOG.info("删除新闻开始|请求报文" + JSON.toJSONString(request));
+            response = deleteNewsHandler.deleteNews(request);
+            LOG.info("删除新闻结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("删除新闻异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
     }
 }

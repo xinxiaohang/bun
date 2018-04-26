@@ -14,7 +14,12 @@ public interface NewsMapper {
 
     int updateByPrimaryKey(News record);
 
+    int updateByNewsId(News record);
+
     News selectByPrimaryKey(Long id);
 
     News selectNewsByNewsId(@Param("newsId") String newsId);
+
+    News selectNewsByUserIdAndNewId(@Param("userId") String userId,
+                                    @Param("newsId") String newsId);
 }

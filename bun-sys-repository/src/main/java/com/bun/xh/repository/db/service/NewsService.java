@@ -23,8 +23,24 @@ public class NewsService {
         newsMapper.insert(news);
     }
 
+    public void updateByNewsId(NewsDTO newsDTO){
+        News news = new News();
+        BeanUtils.copyProperties(newsDTO,news);
+        newsMapper.updateByNewsId(news);
+    }
+
     public NewsDTO selectNewsByNewsId(String newsId){
         News news = newsMapper.selectNewsByNewsId(newsId);
+        if(null == news){
+            return null;
+        }
+        NewsDTO newsDTO = new NewsDTO();
+        BeanUtils.copyProperties(news,newsDTO);
+        return newsDTO;
+    }
+
+    public NewsDTO selectNewsByUserIdAndNewId(String userId,String newsId){
+        News news = newsMapper.selectNewsByUserIdAndNewId(userId,newsId);
         if(null == news){
             return null;
         }

@@ -1,6 +1,7 @@
 package com.bun.xh.service.news;
 
 import com.bun.xh.api.NewsFacade;
+import com.bun.xh.vo.PublishNewsRequest;
 import com.bun.xh.vo.SubmitNewsRequest;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +18,20 @@ public class AbstractNews {
     @Autowired
     protected NewsFacade newsFacade;
 
-    protected SubmitNewsRequest buildSubmitNewsRequest(){
+    protected SubmitNewsRequest buildSubmitNewsRequest(String userId,String newsId){
         SubmitNewsRequest request = new SubmitNewsRequest();
-        request.setNewsId(String.valueOf(System.currentTimeMillis()));
+        request.setNewsId(newsId);
         request.setNewDesc("测试新闻内容");
         request.setNewTitle("测试新闻题目");
         request.setNewsPic("测试图片");
-        request.setUserId("测试人");
+        request.setUserId(userId);
+        return request;
+    }
+
+    protected PublishNewsRequest buildPublishNewsRequest(String userId,String newsId){
+        PublishNewsRequest request = new PublishNewsRequest();
+        request.setNewsId(newsId);
+        request.setUserId(userId);
         return request;
     }
 }

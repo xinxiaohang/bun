@@ -3,7 +3,6 @@ D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\PublishCommentRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\LoginRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\RegisterResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\DeleteCommentResponse.java
-D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\ReportRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\ApproveResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\PublishNewsRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\api\CommentFacade.java
@@ -11,10 +10,12 @@ D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\DeleteCommentRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\LoginResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\exception\BunServerException.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\SubmitNewsRequest.java
+D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\ReportNewsResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\DeleteNewsRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\PublishCommentResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\PublishNewsResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\enums\ResultCodeEnum.java
+D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\ReportNewsRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\RegisterRequest.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\OverruleResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\exception\BunServiceException.java
@@ -24,4 +25,3 @@ D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\AbstractResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\DeleteNewsResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\SubmitNewsResponse.java
 D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\OverruleRequest.java
-D:\bun-sys\bun-sys-api\src\main\java\com\bun\xh\vo\ReportResponse.java

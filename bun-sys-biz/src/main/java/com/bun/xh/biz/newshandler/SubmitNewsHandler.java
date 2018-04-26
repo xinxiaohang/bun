@@ -22,25 +22,26 @@ public class SubmitNewsHandler extends AbstractNewsHandler{
 
         if(!StringUtils.isEmpty(newsDTO)){
             if(0 == NewsStatusEnum.SUBMIT.getStatus().compareTo(newsDTO.getNewsStatus())){
-                response.setResultCode(ResultCodeEnum.STATUS_ERROR.getCode());
-                response.setResultCode(ResultCodeEnum.STATUS_ERROR.getMessage());
+                response = (SubmitNewsResponse)buildAbstractResponse(
+                        response,ResultCodeEnum.NEWS_STATUS_ERROR);
+                return response;
             }
-            response.setResultCode(ResultCodeEnum.SUCCESS.getCode());
-            response.setResultMessage(ResultCodeEnum.SUCCESS.getCode());
+            response = (SubmitNewsResponse)buildAbstractResponse(
+                    response,ResultCodeEnum.SUCCESS);
             return response;
         }
 
         //构造结构体,提交新闻
         NewsLogDTO newsLogDTO = null;
-        makeNewsAndLog(newsDTO,newsLogDTO,request);
+        summitCons(newsDTO,newsLogDTO,request);
 
-        response.setResultCode(ResultCodeEnum.SUCCESS.getCode());
-        response.setResultMessage(ResultCodeEnum.SUCCESS.getMessage());
+        response = (SubmitNewsResponse)buildAbstractResponse(
+                response,ResultCodeEnum.SUCCESS);
         return response;
     }
 
     //构造结构体
-    private void makeNewsAndLog(
+    private void summitCons(
             NewsDTO newsDTO, NewsLogDTO newsLogDTO,SubmitNewsRequest request){
         newsDTO = new NewsDTO();
         newsDTO.setNewsId(request.getNewsId());
@@ -57,14 +58,14 @@ public class SubmitNewsHandler extends AbstractNewsHandler{
 
         newsLogDTO = new NewsLogDTO();
         newsLogDTO.setNewsId(request.getNewsId());
-        newsLogDTO.setFromStatus(0);
-        newsLogDTO.setToStatus(0);
+        newsLogDTO.setFromStatus(NewsStatusEnum.SUBMIT.getStatus());
+        newsLogDTO.setToStatus(NewsStatusEnum.SUBMIT.getStatus());
         newsLogDTO.setOptTime(new Date());
         newsLogDTO.setCheckUserId(null);
         newsLogDTO.setCheckUserName(null);
         newsLogDTO.setOverruleReason(null);
         newsLogDTO.setVersion(0);
 
-        summit(newsDTO,newsLogDTO);
+        summitChange(newsDTO,newsLogDTO);
     };
 }
