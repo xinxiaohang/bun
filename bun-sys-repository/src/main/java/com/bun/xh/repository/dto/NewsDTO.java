@@ -27,6 +27,8 @@ public class NewsDTO {
 
     private Integer newsReportTime;
 
+    private String newsReportReason;
+
     private Integer newsTreadTime;
 
     private Integer version;
@@ -36,7 +38,7 @@ public class NewsDTO {
     public NewsDTO(String newsId, String newsTitle, String newDesc,
                    String newsPic, Integer newsType, Integer newsStatus,
                    String userId, Integer newsSupportTime, Integer newsReportTime,
-                   Integer newsTreadTime, Integer version) {
+                   String newsReportReason, Integer newsTreadTime, Integer version) {
         this.newsId = newsId;
         this.newsTitle = newsTitle;
         this.newDesc = newDesc;
@@ -46,6 +48,7 @@ public class NewsDTO {
         this.userId = userId;
         this.newsSupportTime = newsSupportTime;
         this.newsReportTime = newsReportTime;
+        this.newsReportReason = newsReportReason;
         this.newsTreadTime = newsTreadTime;
         this.version = version;
     }
@@ -120,6 +123,14 @@ public class NewsDTO {
 
     public void setNewsReportTime(Integer newsReportTime) {
         this.newsReportTime = newsReportTime;
+    }
+
+    public String getNewsReportReason() {
+        return newsReportReason;
+    }
+
+    public void setNewsReportReason(String newsReportReason) {
+        this.newsReportReason = newsReportReason;
     }
 
     public Integer getNewsTreadTime() {

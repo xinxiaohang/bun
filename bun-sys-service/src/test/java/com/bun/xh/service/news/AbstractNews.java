@@ -1,10 +1,7 @@
 package com.bun.xh.service.news;
 
 import com.bun.xh.api.NewsFacade;
-import com.bun.xh.vo.ApproveNewsRequest;
-import com.bun.xh.vo.OverruleNewsRequest;
-import com.bun.xh.vo.PublishNewsRequest;
-import com.bun.xh.vo.SubmitNewsRequest;
+import com.bun.xh.vo.*;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -29,6 +26,7 @@ public class AbstractNews {
         request.setNewTitle("测试新闻题目");
         request.setNewsPic("测试图片");
         request.setUserId(userId);
+        request.setNewsType(1);
         return request;
     }
 
@@ -53,6 +51,14 @@ public class AbstractNews {
         request.setCheckedUserName("测试审核人名字");
         request.setOverruleReason("测试不通过理由");
         request.setNewsIds(newsIds);
+        return request;
+    }
+
+    protected ReportNewsRequest buildReportNewsRequest(String newsId){
+        ReportNewsRequest request = new ReportNewsRequest();
+        request.setNewsId(newsId);
+        request.setReportUserId("测试举报人");
+        request.setReportReason("测试举报理由");
         return request;
     }
 }
