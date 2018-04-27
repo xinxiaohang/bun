@@ -5,8 +5,10 @@ import com.bun.xh.enums.ResultCodeEnum;
 import com.bun.xh.repository.dto.NewsDTO;
 import com.bun.xh.vo.TreadNewsRequest;
 import com.bun.xh.vo.TreadNewsResponse;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+@Service
 public class TreadNewsHandler extends AbstractNewsHandler {
 
     public TreadNewsResponse treadNews(TreadNewsRequest request){

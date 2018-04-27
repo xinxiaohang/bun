@@ -5,8 +5,10 @@ import com.bun.xh.enums.ResultCodeEnum;
 import com.bun.xh.repository.dto.NewsDTO;
 import com.bun.xh.vo.SupportNewsRequest;
 import com.bun.xh.vo.SupportNewsResponse;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+@Service
 public class SupportNewsHandler extends AbstractNewsHandler{
 
     public SupportNewsResponse supportNews(SupportNewsRequest request){

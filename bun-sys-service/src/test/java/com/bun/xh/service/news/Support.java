@@ -35,6 +35,6 @@ public class Support extends AbstractNews {
 
         SupportNewsRequest supportNewsRequest = buildSupportNewsRequest(newsId);
         SupportNewsResponse supportNewsResponse = newsFacade.supportNews(supportNewsRequest);
-        Assert.assertEquals(ResultCodeEnum.SUCCESS.getCode(),approveNewsResponse.getResultCode());
+        Assert.assertEquals(ResultCodeEnum.SUCCESS.getCode(),supportNewsResponse.getResultCode());
     }
 }
