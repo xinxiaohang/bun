@@ -69,7 +69,7 @@ public class AbstractNewsHandler extends AbstractHandler{
         });
     }
 
-    protected void Changes(NewsDTO newsDTO){
+    protected void changes(NewsDTO newsDTO){
         newsService.updateByNewsId(newsDTO);
     }
 

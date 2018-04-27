@@ -49,7 +49,7 @@ public class ReportNewsHandler extends AbstractNewsHandler{
         newsDTO.setNewsTreadTime(newsReportTime+1);
         newsDTO.setNewsReportReason(newsReportReason);
 
-        Changes(newsDTO);
+        changes(newsDTO);
 
         response = (ReportNewsResponse) buildAbstractResponse(response,ResultCodeEnum.SUCCESS);
 

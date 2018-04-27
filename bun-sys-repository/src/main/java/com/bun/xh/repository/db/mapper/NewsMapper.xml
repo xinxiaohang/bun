@@ -23,11 +23,6 @@
     news_report_time, news_report_reason, news_tread_time, version, created_at, updated_at
   </sql>
 
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from news
-    where id = #{id,jdbcType=BIGINT}
-  </delete>
-
   <delete id="deleteNewsByNewsId">
     delete from news
     where news_id = #{newsId,jdbcType=BIGINT}

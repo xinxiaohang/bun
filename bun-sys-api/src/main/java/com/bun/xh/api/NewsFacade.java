@@ -4,8 +4,6 @@ import com.bun.xh.exception.BunServerException;
 import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.vo.ApproveNewsRequest;
 import com.bun.xh.vo.ApproveNewsResponse;
-import com.bun.xh.vo.UserDeleteNewsRequest;
-import com.bun.xh.vo.UserDeleteNewsResponse;
 import com.bun.xh.vo.OverruleNewsRequest;
 import com.bun.xh.vo.OverruleNewsResponse;
 import com.bun.xh.vo.PublishNewsRequest;
@@ -14,6 +12,12 @@ import com.bun.xh.vo.ReportNewsRequest;
 import com.bun.xh.vo.ReportNewsResponse;
 import com.bun.xh.vo.SubmitNewsRequest;
 import com.bun.xh.vo.SubmitNewsResponse;
+import com.bun.xh.vo.SupportNewsRequest;
+import com.bun.xh.vo.SupportNewsResponse;
+import com.bun.xh.vo.TreadNewsRequest;
+import com.bun.xh.vo.TreadNewsResponse;
+import com.bun.xh.vo.UserDeleteNewsRequest;
+import com.bun.xh.vo.UserDeleteNewsResponse;
 
 /**
  * Created by xin on 2018/4/7.

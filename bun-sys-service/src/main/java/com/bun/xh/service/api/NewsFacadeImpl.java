@@ -8,6 +8,10 @@ import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.service.convert.ExceptionConvert;
 import com.bun.xh.vo.ApproveNewsRequest;
 import com.bun.xh.vo.ApproveNewsResponse;
+import com.bun.xh.vo.SupportNewsRequest;
+import com.bun.xh.vo.SupportNewsResponse;
+import com.bun.xh.vo.TreadNewsRequest;
+import com.bun.xh.vo.TreadNewsResponse;
 import com.bun.xh.vo.UserDeleteNewsRequest;
 import com.bun.xh.vo.UserDeleteNewsResponse;
 import com.bun.xh.vo.OverruleNewsRequest;
@@ -42,6 +46,12 @@ public class NewsFacadeImpl implements NewsFacade {
 
     @Autowired
     private OverruleHandler overruleHandler;
+
+    @Autowired
+    private SupportNewsHandler supportNewsHandler;
+
+    @Autowired
+    private TreadNewsHandler treadNewsHandler;
 
     @Autowired
     private ReportNewsHandler reportNewsHandler;
@@ -103,6 +113,36 @@ public class NewsFacadeImpl implements NewsFacade {
             ExceptionConvert.CreateException(response);
         }catch (Exception e){
             LOG.error("新闻审核不通过异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
+    }
+
+    public SupportNewsResponse supportNews(SupportNewsRequest request) throws BunServerException, BunServiceException {
+        SupportNewsResponse response = new SupportNewsResponse();
+
+        try {
+            LOG.info("点赞新闻开始|请求报文" + JSON.toJSONString(request));
+            response = supportNewsHandler.supportNews(request);
+            LOG.info("点赞新闻结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("点赞新闻异常异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
+    }
+
+    public TreadNewsResponse treadNews(TreadNewsRequest request) throws BunServerException, BunServiceException {
+        TreadNewsResponse response = new TreadNewsResponse();
+
+        try {
+            LOG.info("点踩新闻开始|请求报文" + JSON.toJSONString(request));
+            response = treadNewsHandler.treadNews(request);
+            LOG.info("点踩新闻结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("点踩新闻异常异常",e);
             ExceptionConvert.throwException(e);
         }
         return response;

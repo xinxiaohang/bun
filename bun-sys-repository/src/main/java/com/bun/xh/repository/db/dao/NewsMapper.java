@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface NewsMapper {
-    int deleteByPrimaryKey(Long id);
 
     int insert(News record);
 

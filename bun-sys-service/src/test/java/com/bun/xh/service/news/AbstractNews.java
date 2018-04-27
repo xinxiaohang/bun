@@ -68,4 +68,16 @@ public class AbstractNews {
         request.setUserId(userId);
         return request;
     }
+
+    protected SupportNewsRequest buildSupportNewsRequest(String newsId){
+        SupportNewsRequest request = new SupportNewsRequest();
+        request.setNewsId(newsId);
+        return request;
+    }
+
+    protected TreadNewsRequest buildTreadNewsRequest(String newsId){
+        TreadNewsRequest request = new TreadNewsRequest();
+        request.setNewsId(newsId);
+        return request;
+    }
 }
