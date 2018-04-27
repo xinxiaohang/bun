@@ -8,8 +8,8 @@ import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.service.convert.ExceptionConvert;
 import com.bun.xh.vo.ApproveNewsRequest;
 import com.bun.xh.vo.ApproveNewsResponse;
-import com.bun.xh.vo.DeleteNewsRequest;
-import com.bun.xh.vo.DeleteNewsResponse;
+import com.bun.xh.vo.UserDeleteNewsRequest;
+import com.bun.xh.vo.UserDeleteNewsResponse;
 import com.bun.xh.vo.OverruleNewsRequest;
 import com.bun.xh.vo.OverruleNewsResponse;
 import com.bun.xh.vo.PublishNewsRequest;
@@ -123,12 +123,12 @@ public class NewsFacadeImpl implements NewsFacade {
         return response;
     }
 
-    public DeleteNewsResponse deleteNews(DeleteNewsRequest request)throws BunServerException,BunServiceException {
-        DeleteNewsResponse response = new DeleteNewsResponse();
+    public UserDeleteNewsResponse userDeleteNews(UserDeleteNewsRequest request)throws BunServerException,BunServiceException {
+        UserDeleteNewsResponse response = new UserDeleteNewsResponse();
 
         try {
             LOG.info("删除新闻开始|请求报文" + JSON.toJSONString(request));
-            response = deleteNewsHandler.deleteNews(request);
+            response = deleteNewsHandler.userDeleteNews(request);
             LOG.info("删除新闻结束|返回报文" + JSON.toJSONString(response));
             ExceptionConvert.CreateException(response);
         }catch (Exception e){

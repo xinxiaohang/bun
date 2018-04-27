@@ -10,6 +10,8 @@ public interface NewsMapper {
 
     int insert(News record);
 
+    int deleteNewsByNewsId(@Param("newsId") String newsId);
+
     int updateByNewsId(News record);
 
     News selectNewsByNewsId(@Param("newsId") String newsId);

@@ -61,4 +61,11 @@ public class AbstractNews {
         request.setReportReason("测试举报理由");
         return request;
     }
+
+    protected UserDeleteNewsRequest buildUserDeleteNewsRequest(String userId,String newsId){
+        UserDeleteNewsRequest request = new UserDeleteNewsRequest();
+        request.setNewsId(newsId);
+        request.setUserId(userId);
+        return request;
+    }
 }

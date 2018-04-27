@@ -28,6 +28,10 @@ public class NewsService {
         newsMapper.insert(news);
     }
 
+    public void deleteNewsByNewsId(String newsId){
+        newsMapper.deleteNewsByNewsId(newsId);
+    }
+
     public void updateByNewsId(NewsDTO newsDTO){
         News news = new News();
         BeanUtils.copyProperties(newsDTO,news);

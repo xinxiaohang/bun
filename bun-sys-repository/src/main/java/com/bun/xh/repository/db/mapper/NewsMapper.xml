@@ -27,6 +27,12 @@
     delete from news
     where id = #{id,jdbcType=BIGINT}
   </delete>
+
+  <delete id="deleteNewsByNewsId">
+    delete from news
+    where news_id = #{newsId,jdbcType=BIGINT}
+  </delete>
+
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.News" useGeneratedKeys="true">
     insert into news (news_id, news_title, new_desc, 
       news_pic, news_type, news_status, 
