@@ -30,7 +30,7 @@ public class TreadNewsHandler extends AbstractNewsHandler {
 
         newsDTO.setNewsSupportTime(newsTreadTime+1);
 
-        changes(newsDTO);
+        updateByNewsId(newsDTO);
 
         response = (TreadNewsResponse)buildAbstractResponse(response, ResultCodeEnum.SUCCESS);
 

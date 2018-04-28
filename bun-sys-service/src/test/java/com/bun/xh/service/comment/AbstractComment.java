@@ -4,9 +4,11 @@ import com.bun.xh.api.CommentFacade;
 import com.bun.xh.api.NewsFacade;
 import com.bun.xh.vo.ApproveNewsRequest;
 import com.bun.xh.vo.PublishNewsRequest;
+import com.bun.xh.vo.ReportCommentRequest;
 import com.bun.xh.vo.SubmitCommentRequest;
 import com.bun.xh.vo.SubmitNewsRequest;
 import com.bun.xh.vo.SupportCommentRequest;
+import com.bun.xh.vo.TreadCommentRequest;
 import com.bun.xh.vo.UserDeleteCommentRequest;
 import com.bun.xh.vo.UserDeleteNewsRequest;
 import org.junit.runner.RunWith;
@@ -74,6 +76,20 @@ public class AbstractComment {
     protected SupportCommentRequest buildSupportCommentRequest(String commentId){
         SupportCommentRequest request = new SupportCommentRequest();
         request.setCommentId(commentId);
+        return request;
+    }
+
+    protected TreadCommentRequest buildTreadCommentRequest(String commentId){
+        TreadCommentRequest request = new TreadCommentRequest();
+        request.setCommentId(commentId);
+        return request;
+    }
+
+    protected ReportCommentRequest buildReportCommentRequest(String commentId){
+        ReportCommentRequest request = new ReportCommentRequest();
+        request.setCommentId(commentId);
+        request.setReportUserId("测试举报userid");
+        request.setReportReason("测试举报评论理由");
         return request;
     }
 }

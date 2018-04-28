@@ -30,7 +30,7 @@ public class SupportNewsHandler extends AbstractNewsHandler{
 
         newsDTO.setNewsSupportTime(newsSupportTime+1);
 
-        changes(newsDTO);
+        updateByNewsId(newsDTO);
 
         response = (SupportNewsResponse)buildAbstractResponse(response, ResultCodeEnum.SUCCESS);
 

@@ -24,7 +24,7 @@ public class SupportCommentHandler  extends AbstractCommentHandler{
 
         commentDTO.setCommSupportTime(supportCommentTime+1);
 
-        updeteCommByCommId(commentDTO);
+        updateCommByCommId(commentDTO);
 
         response = (SupportCommentResponse) buildAbstractResponse(response, ResultCodeEnum.SUCCESS);
 
