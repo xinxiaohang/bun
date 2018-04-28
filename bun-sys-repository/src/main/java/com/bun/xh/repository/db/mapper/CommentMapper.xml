@@ -23,11 +23,6 @@
     comm_support_time, comm_tread_time, comm_report_time, comm_report_reason, version, created_at, updated_at
   </sql>
 
-  <delete id="deleteCommByCommId">
-    delete from comment
-    where comment_id = #{commentId,jdbcType=BIGINT}
-  </delete>
-
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.Comment" useGeneratedKeys="true">
     insert into comment (comment_id, comment_desc, comment_time, 
       news_id, user_id, user_name, 
@@ -40,6 +35,29 @@
       #{commReportTime,jdbcType=INTEGER}, #{commReportReason,jdbcType=VARCHAR}, #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP},
       #{updatedAt,jdbcType=TIMESTAMP})
   </insert>
+
+  <delete id="deleteCommByCommId" >
+    delete from comment
+    where comment_id = #{commentId,jdbcType=BIGINT}
+  </delete>
+
+  <update id="updateCommByCommentId" parameterType="com.bun.xh.repository.db.model.Comment">
+    update comment
+    <set>
+      comment_desc = #{commentDesc,jdbcType=VARCHAR},
+      comment_time = #{commentTime,jdbcType=TIMESTAMP},
+      news_id = #{newsId,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      resp_comment_id = #{respCommentId,jdbcType=VARCHAR},
+      comm_support_time = #{commSupportTime,jdbcType=INTEGER},
+      comm_tread_time = #{commTreadTime,jdbcType=INTEGER},
+      comm_report_time = #{commReportTime,jdbcType=INTEGER},
+      comm_report_reason = #{commReportReason,jdbcType=VARCHAR},
+      version = #{version,jdbcType=INTEGER}
+    </set>
+    where comment_id = #{commentId,jdbcType=BIGINT}
+  </update>
 
   <select id="selectCommByCommId" resultMap="BaseResultMap">
     select

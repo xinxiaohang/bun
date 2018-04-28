@@ -26,4 +26,8 @@ public class AbstractCommentHandler extends AbstractHandler{
     protected void deleteCommByCommId(String commentId){
         commentService.deleteCommByCommId(commentId);
     }
+
+    protected void updeteCommByCommId(CommentDTO commentDTO){
+        commentService.updeteCommByCommId(commentDTO);
+    }
 }

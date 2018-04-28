@@ -49,4 +49,13 @@ public class CommentService {
     public void deleteCommByCommId(String commentId){
         commentMapper.deleteCommByCommId(commentId);
     }
+
+    public void updeteCommByCommId(CommentDTO commentDTO){
+        if(StringUtils.isEmpty(commentDTO)){
+            return;
+        }
+        Comment comment = new Comment();
+        BeanUtils.copyProperties(commentDTO,comment);
+        commentMapper.updateCommByCommentId(comment);
+    }
 }
