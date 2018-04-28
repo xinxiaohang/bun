@@ -2,11 +2,20 @@ package com.bun.xh.service.api;
 
 import com.alibaba.fastjson.JSON;
 import com.bun.xh.api.CommentFacade;
+import com.bun.xh.biz.commenthandler.ReportCommentHandler;
 import com.bun.xh.biz.commenthandler.SubmitCommentHandler;
+import com.bun.xh.biz.commenthandler.SupportCommentHandler;
+import com.bun.xh.biz.commenthandler.TreadCommentHandler;
 import com.bun.xh.biz.commenthandler.UserDeleteCommentHandler;
 import com.bun.xh.exception.BunServerException;
 import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.service.convert.ExceptionConvert;
+import com.bun.xh.vo.ReportCommentRequest;
+import com.bun.xh.vo.ReportCommentResponse;
+import com.bun.xh.vo.SupportCommentRequest;
+import com.bun.xh.vo.SupportCommentResponse;
+import com.bun.xh.vo.TreadCommentRequest;
+import com.bun.xh.vo.TreadCommentResponse;
 import com.bun.xh.vo.UserDeleteCommentRequest;
 import com.bun.xh.vo.UserDeleteCommentResponse;
 import com.bun.xh.vo.SubmitCommentRequest;
@@ -29,6 +38,15 @@ public class CommentFacadeImpl implements CommentFacade {
 
     @Autowired
     private UserDeleteCommentHandler userDeleteCommentHandler;
+
+    @Autowired
+    private SupportCommentHandler supportCommentHandler;
+
+    @Autowired
+    private TreadCommentHandler treadCommentHandler;
+
+    @Autowired
+    private ReportCommentHandler reportCommentHandler;
 
     public SubmitCommentResponse submitComment(SubmitCommentRequest request) throws BunServiceException,BunServerException{
         SubmitCommentResponse response = new SubmitCommentResponse();
@@ -53,6 +71,48 @@ public class CommentFacadeImpl implements CommentFacade {
             ExceptionConvert.CreateException(response);
         }catch (Exception e){
             LOG.error("删除评论异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
+    }
+
+    public SupportCommentResponse supportComment(SupportCommentRequest request) throws BunServerException, BunServiceException {
+        SupportCommentResponse response = new SupportCommentResponse();
+        try {
+            LOG.info("点赞评论开始|请求报文" + JSON.toJSONString(request));
+            response = supportCommentHandler.supportComment(request);
+            LOG.info("点赞评论结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("点赞评论异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
+    }
+
+    public TreadCommentResponse treadComment(TreadCommentRequest request) throws BunServerException, BunServiceException {
+        TreadCommentResponse response = new TreadCommentResponse();
+        try {
+            LOG.info("点踩评论开始|请求报文" + JSON.toJSONString(request));
+            response = treadCommentHandler.treadComment(request);
+            LOG.info("点踩评论结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("点踩评论异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
+    }
+
+    public ReportCommentResponse reportComment(ReportCommentRequest request) throws BunServerException, BunServiceException {
+        ReportCommentResponse response = new ReportCommentResponse();
+        try {
+            LOG.info("举报评论开始|请求报文" + JSON.toJSONString(request));
+            response = reportCommentHandler.reportComment(request);
+            LOG.info("举报评论结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("举报评论异常",e);
             ExceptionConvert.throwException(e);
         }
         return response;
