@@ -10,4 +10,7 @@ public interface CommentMapper {
     int deleteCommByCommId(@Param("commentId") String commentId);
 
     Comment selectCommByCommId(@Param("commentId") String commentId);
+
+    Comment selectCommByUserIdAndCommId(@Param("userId") String userId,
+                                        @Param("commentId") String commentId);
 }

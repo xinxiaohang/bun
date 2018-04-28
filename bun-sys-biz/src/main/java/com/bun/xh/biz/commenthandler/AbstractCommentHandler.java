@@ -18,4 +18,12 @@ public class AbstractCommentHandler extends AbstractHandler{
     protected void insertComm(CommentDTO commentDTO){
         commentService.insert(commentDTO);
     }
+
+    protected CommentDTO selectCommByUserIdAndCommId(String userId,String commentId){
+        return commentService.selectCommByUserIdAndCommId(userId,commentId);
+    }
+
+    protected void deleteCommByCommId(String commentId){
+        commentService.deleteCommByCommId(commentId);
+    }
 }

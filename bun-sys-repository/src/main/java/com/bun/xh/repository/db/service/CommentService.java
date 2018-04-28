@@ -17,6 +17,15 @@ public class CommentService {
     @Autowired
     private CommentMapper commentMapper;
 
+    public void insert(CommentDTO commentDTO){
+        if(StringUtils.isEmpty(commentDTO)){
+            return;
+        }
+        Comment comment = new Comment();
+        BeanUtils.copyProperties(commentDTO,comment);
+        commentMapper.insert(comment);
+    }
+
     public CommentDTO selectCommByCommId(String commentId){
         Comment comment = commentMapper.selectCommByCommId(commentId);
         if(StringUtils.isEmpty(comment)){
@@ -27,12 +36,17 @@ public class CommentService {
         return commentDTO;
     }
 
-    public void insert(CommentDTO commentDTO){
-        if(StringUtils.isEmpty(commentDTO)){
-            return;
+    public CommentDTO selectCommByUserIdAndCommId(String userId,String commentId){
+        Comment comment = commentMapper.selectCommByUserIdAndCommId(userId,commentId);
+        if(StringUtils.isEmpty(comment)){
+            return null;
         }
-        Comment comment = new Comment();
-        BeanUtils.copyProperties(commentDTO,comment);
-        commentMapper.insert(comment);
+        CommentDTO commentDTO = new CommentDTO();
+        BeanUtils.copyProperties(comment,commentDTO);
+        return commentDTO;
+    }
+
+    public void deleteCommByCommId(String commentId){
+        commentMapper.deleteCommByCommId(commentId);
     }
 }

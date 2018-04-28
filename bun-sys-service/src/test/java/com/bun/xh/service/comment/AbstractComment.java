@@ -6,6 +6,8 @@ import com.bun.xh.vo.ApproveNewsRequest;
 import com.bun.xh.vo.PublishNewsRequest;
 import com.bun.xh.vo.SubmitCommentRequest;
 import com.bun.xh.vo.SubmitNewsRequest;
+import com.bun.xh.vo.UserDeleteCommentRequest;
+import com.bun.xh.vo.UserDeleteNewsRequest;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -50,14 +52,21 @@ public class AbstractComment {
     }
 
     protected SubmitCommentRequest buildSubmitCommentRequest(
-            String commentId,String newsId){
+            String userId,String commentId,String newsId){
         SubmitCommentRequest request = new SubmitCommentRequest();
         request.setCommentId(commentId);
         request.setNewsId(newsId);
         request.setUserName("测试评论人");
         request.setRespCommentId(null);
         request.setCommentDesc("测试评论");
-        request.setUserId("测试userId");
+        request.setUserId(userId);
+        return request;
+    }
+
+    protected UserDeleteCommentRequest buildUserDeleteCommentRequest(String userId,String commentId){
+        UserDeleteCommentRequest request = new UserDeleteCommentRequest();
+        request.setUserId(userId);
+        request.setCommentId(commentId);
         return request;
     }
 }

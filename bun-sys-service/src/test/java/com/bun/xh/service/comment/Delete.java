@@ -1,6 +1,5 @@
 package com.bun.xh.service.comment;
 
-import com.bun.xh.biz.commenthandler.SubmitCommentHandler;
 import com.bun.xh.enums.ResultCodeEnum;
 import com.bun.xh.exception.BunServerException;
 import com.bun.xh.exception.BunServiceException;
@@ -12,13 +11,15 @@ import com.bun.xh.vo.SubmitCommentRequest;
 import com.bun.xh.vo.SubmitCommentResponse;
 import com.bun.xh.vo.SubmitNewsRequest;
 import com.bun.xh.vo.SubmitNewsResponse;
+import com.bun.xh.vo.UserDeleteCommentRequest;
+import com.bun.xh.vo.UserDeleteCommentResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Submit extends AbstractComment{
+public class Delete extends AbstractComment {
 
     @Test
     public void test() throws BunServerException, BunServiceException {
@@ -39,6 +40,9 @@ public class Submit extends AbstractComment{
 
         SubmitCommentRequest submitCommentRequest = buildSubmitCommentRequest(userId,commentId,newsId);
         SubmitCommentResponse commentResponse = commentFacade.submitComment(submitCommentRequest);
-        Assert.assertEquals(ResultCodeEnum.SUCCESS.getCode(),commentResponse.getResultCode());
+
+        UserDeleteCommentRequest userDeleteCommentRequest = buildUserDeleteCommentRequest(userId,commentId);
+        UserDeleteCommentResponse userDeleteCommentResponse = commentFacade.userDeleteComment(userDeleteCommentRequest);
+        Assert.assertEquals(ResultCodeEnum.SUCCESS.getCode(),userDeleteCommentResponse.getResultCode());
     }
 }

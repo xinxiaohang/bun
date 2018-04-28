@@ -23,11 +23,6 @@
     comm_support_time, comm_tread_time, comm_report_time, comm_report_reason, version, created_at, updated_at
   </sql>
 
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from comment
-    where id = #{id,jdbcType=BIGINT}
-  </delete>
-
   <delete id="deleteCommByCommId">
     delete from comment
     where comment_id = #{commentId,jdbcType=BIGINT}
@@ -51,5 +46,13 @@
     <include refid="Base_Column_List" />
     from comment
     where comment_id = #{commentId,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectCommByUserIdAndCommId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from comment
+    where user_id = #{userId,jdbcType=VARCHAR}
+    and comment_id = #{commentId,jdbcType=VARCHAR}
   </select>
 </mapper>
