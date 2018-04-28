@@ -13,181 +13,43 @@
     <result column="comm_support_time" jdbcType="INTEGER" property="commSupportTime" />
     <result column="comm_tread_time" jdbcType="INTEGER" property="commTreadTime" />
     <result column="comm_report_time" jdbcType="INTEGER" property="commReportTime" />
+    <result column="comm_report_reason" jdbcType="VARCHAR" property="commReportReason" />
     <result column="version" jdbcType="INTEGER" property="version" />
     <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
     <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
   </resultMap>
   <sql id="Base_Column_List">
     id, comment_id, comment_desc, comment_time, news_id, user_id, user_name, resp_comment_id, 
-    comm_support_time, comm_tread_time, comm_report_time, version, created_at, updated_at
+    comm_support_time, comm_tread_time, comm_report_time, comm_report_reason, version, created_at, updated_at
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from comment
-    where id = #{id,jdbcType=BIGINT}
-  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from comment
     where id = #{id,jdbcType=BIGINT}
   </delete>
+
+  <delete id="deleteCommByCommId">
+    delete from comment
+    where comment_id = #{commentId,jdbcType=BIGINT}
+  </delete>
+
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.Comment" useGeneratedKeys="true">
     insert into comment (comment_id, comment_desc, comment_time, 
       news_id, user_id, user_name, 
       resp_comment_id, comm_support_time, comm_tread_time, 
-      comm_report_time, version, created_at, 
+      comm_report_time, comm_report_reason, version, created_at,
       updated_at)
     values (#{commentId,jdbcType=VARCHAR}, #{commentDesc,jdbcType=VARCHAR}, #{commentTime,jdbcType=TIMESTAMP}, 
       #{newsId,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
       #{respCommentId,jdbcType=VARCHAR}, #{commSupportTime,jdbcType=INTEGER}, #{commTreadTime,jdbcType=INTEGER}, 
-      #{commReportTime,jdbcType=INTEGER}, #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
+      #{commReportTime,jdbcType=INTEGER}, #{commReportReason,jdbcType=VARCHAR}, #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP},
       #{updatedAt,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.Comment" useGeneratedKeys="true">
-    insert into comment
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="commentId != null">
-        comment_id,
-      </if>
-      <if test="commentDesc != null">
-        comment_desc,
-      </if>
-      <if test="commentTime != null">
-        comment_time,
-      </if>
-      <if test="newsId != null">
-        news_id,
-      </if>
-      <if test="userId != null">
-        user_id,
-      </if>
-      <if test="userName != null">
-        user_name,
-      </if>
-      <if test="respCommentId != null">
-        resp_comment_id,
-      </if>
-      <if test="commSupportTime != null">
-        comm_support_time,
-      </if>
-      <if test="commTreadTime != null">
-        comm_tread_time,
-      </if>
-      <if test="commReportTime != null">
-        comm_report_time,
-      </if>
-      <if test="version != null">
-        version,
-      </if>
-      <if test="createdAt != null">
-        created_at,
-      </if>
-      <if test="updatedAt != null">
-        updated_at,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="commentId != null">
-        #{commentId,jdbcType=VARCHAR},
-      </if>
-      <if test="commentDesc != null">
-        #{commentDesc,jdbcType=VARCHAR},
-      </if>
-      <if test="commentTime != null">
-        #{commentTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="newsId != null">
-        #{newsId,jdbcType=VARCHAR},
-      </if>
-      <if test="userId != null">
-        #{userId,jdbcType=VARCHAR},
-      </if>
-      <if test="userName != null">
-        #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="respCommentId != null">
-        #{respCommentId,jdbcType=VARCHAR},
-      </if>
-      <if test="commSupportTime != null">
-        #{commSupportTime,jdbcType=INTEGER},
-      </if>
-      <if test="commTreadTime != null">
-        #{commTreadTime,jdbcType=INTEGER},
-      </if>
-      <if test="commReportTime != null">
-        #{commReportTime,jdbcType=INTEGER},
-      </if>
-      <if test="version != null">
-        #{version,jdbcType=INTEGER},
-      </if>
-      <if test="createdAt != null">
-        #{createdAt,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatedAt != null">
-        #{updatedAt,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.bun.xh.repository.db.model.Comment">
-    update comment
-    <set>
-      <if test="commentId != null">
-        comment_id = #{commentId,jdbcType=VARCHAR},
-      </if>
-      <if test="commentDesc != null">
-        comment_desc = #{commentDesc,jdbcType=VARCHAR},
-      </if>
-      <if test="commentTime != null">
-        comment_time = #{commentTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="newsId != null">
-        news_id = #{newsId,jdbcType=VARCHAR},
-      </if>
-      <if test="userId != null">
-        user_id = #{userId,jdbcType=VARCHAR},
-      </if>
-      <if test="userName != null">
-        user_name = #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="respCommentId != null">
-        resp_comment_id = #{respCommentId,jdbcType=VARCHAR},
-      </if>
-      <if test="commSupportTime != null">
-        comm_support_time = #{commSupportTime,jdbcType=INTEGER},
-      </if>
-      <if test="commTreadTime != null">
-        comm_tread_time = #{commTreadTime,jdbcType=INTEGER},
-      </if>
-      <if test="commReportTime != null">
-        comm_report_time = #{commReportTime,jdbcType=INTEGER},
-      </if>
-      <if test="version != null">
-        version = #{version,jdbcType=INTEGER},
-      </if>
-      <if test="createdAt != null">
-        created_at = #{createdAt,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatedAt != null">
-        updated_at = #{updatedAt,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.bun.xh.repository.db.model.Comment">
-    update comment
-    set comment_id = #{commentId,jdbcType=VARCHAR},
-      comment_desc = #{commentDesc,jdbcType=VARCHAR},
-      comment_time = #{commentTime,jdbcType=TIMESTAMP},
-      news_id = #{newsId,jdbcType=VARCHAR},
-      user_id = #{userId,jdbcType=VARCHAR},
-      user_name = #{userName,jdbcType=VARCHAR},
-      resp_comment_id = #{respCommentId,jdbcType=VARCHAR},
-      comm_support_time = #{commSupportTime,jdbcType=INTEGER},
-      comm_tread_time = #{commTreadTime,jdbcType=INTEGER},
-      comm_report_time = #{commReportTime,jdbcType=INTEGER},
-      version = #{version,jdbcType=INTEGER},
-      created_at = #{createdAt,jdbcType=TIMESTAMP},
-      updated_at = #{updatedAt,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
+
+  <select id="selectCommByCommId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from comment
+    where comment_id = #{commentId,jdbcType=VARCHAR}
+  </select>
 </mapper>

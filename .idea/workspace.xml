@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a322d5-be3a-4751-ba6b-1faeb260b552" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/SupportNewsHandler.java" afterPath="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/SupportNewsHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/TreadNewsHandler.java" afterPath="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/TreadNewsHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Support.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Support.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Tread.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Tread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/CommentMapper.java" afterPath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/CommentMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/CommentMapper.xml" afterPath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/CommentMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/Comment.java" afterPath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/Comment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/CommentService.java" afterPath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/CommentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/dto/CommentDTO.java" afterPath="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/dto/CommentDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" afterPath="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/DeleteCommentRequest.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SubmitCommentRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/DeleteCommentResponse.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SubmitCommentResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishCommentRequest.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/UserDeleteCommentRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishCommentResponse.java" afterPath="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/UserDeleteCommentResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/DeleteNewsHandler.java" afterPath="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/UserDeleteNewsHandler.java" />
     </list>
     <ignored path="bun.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SupportNewsHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/SupportNewsHandler.java">
+      <file leaf-file-name="Submit.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/comment/Submit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="410">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,31 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubmitNewsHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/SubmitNewsHandler.java">
+      <file leaf-file-name="SubmitCommentHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/SubmitCommentHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportNewsHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/ReportNewsHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Support.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Support.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="249">
+              <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,69 +79,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsLogMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsLogMapper.java">
+      <file leaf-file-name="AbstractCommentHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/AbstractCommentHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <marker date="1524827026077" expanded="true" signature="1703:1765" placeholder="delete from " />
-                <marker date="1524827026077" expanded="true" signature="1914:2626" placeholder="insert into news... " />
-                <marker date="1524827026077" expanded="true" signature="2727:3401" placeholder="update news " />
-                <marker date="1524827026077" expanded="true" signature="3480:3588" placeholder="select from news" />
-                <marker date="1524827026077" expanded="true" signature="3675:3828" placeholder="select from news" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Tread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="304">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Delete.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Delete.java">
+      <file leaf-file-name="CommentService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/CommentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreadNewsHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/TreadNewsHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,20 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/exception/BunServiceException.java" />
-        <option value="$PROJECT_DIR$/bun-sys-comm/pom.xml" />
-        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java" />
-        <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/Overrule.java" />
-        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/PublishNewsRequest.java" />
-        <option value="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/publish.java" />
-        <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/AbstractHandler.java" />
-        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsLogMapper.xml" />
-        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/ApproveRequest.java" />
-        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java" />
-        <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/PublishNewsHandler.java" />
-        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/ApproveResponse.java" />
-        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/NewLogService.java" />
-        <option value="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Approve.java" />
         <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/ApproveHandler.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/OverruleRequest.java" />
         <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/OverruleNewsRequest.java" />
@@ -233,6 +165,20 @@
         <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/TreadNewsHandler.java" />
         <option value="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Tread.java" />
         <option value="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Support.java" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/UserDeleteCommentHandler.java" />
+        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/CommentMapper.xml" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/CommentMapper.java" />
+        <option value="$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SubmitCommentRequest.java" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/dto/CommentDTO.java" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/Comment.java" />
+        <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/AbstractCommentHandler.java" />
+        <option value="$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/CommentService.java" />
+        <option value="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/comment/AbstractComment.java" />
+        <option value="$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/comment/Submit.java" />
+        <option value="$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java" />
+        <option value="$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/SubmitCommentHandler.java" />
       </list>
     </option>
   </component>
@@ -564,11 +510,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,10 +549,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="properties" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -731,10 +681,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -763,6 +709,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -797,6 +747,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -909,8 +863,56 @@
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-comm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1002,15 +1004,147 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-biz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commenthandler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bun-sys-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bun-sys-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1029,33 +1163,7 @@
       <recent name="D:\bun-sys" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Support.test">
-    <configuration default="false" name="Overrule.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.bun.xh.service.news.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="bun-sys-service" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.bun.xh.service.news" />
-      <option name="MAIN_CLASS_NAME" value="com.bun.xh.service.news.Overrule" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Submit.test (1)">
     <configuration default="false" name="Report.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1146,6 +1254,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.bun.xh.service.news" />
       <option name="MAIN_CLASS_NAME" value="com.bun.xh.service.news.Support" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Submit.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.bun.xh.service.comment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bun-sys-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bun.xh.service.comment" />
+      <option name="MAIN_CLASS_NAME" value="com.bun.xh.service.comment.Submit" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1610,19 +1744,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Overrule.test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Report.test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Delete.test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Submit.test" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.Support.test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Report.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Delete.test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Submit.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Support.test" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.Submit.test (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Support.test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Delete.test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Submit.test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Report.test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Overrule.test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Submit.test (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Support.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Delete.test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Submit.test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Report.test" />
       </list>
     </recent_temporary>
   </component>
@@ -1676,76 +1810,77 @@
       <workItem from="1524745355408" duration="11925000" />
       <workItem from="1524801122800" duration="7790000" />
       <workItem from="1524817884003" duration="7110000" />
-      <workItem from="1524825225641" duration="4765000" />
+      <workItem from="1524825225641" duration="12046000" />
+      <workItem from="1524883459627" duration="10927000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Delete_test - 2018.04.27 at 19h 39m 37s.xml">
-      <configuration name="Delete.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 35m 51s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Submit_test - 2018.04.27 at 18h 39m 36s.xml">
-      <configuration name="Submit.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 36m 55s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Submit_test - 2018.04.27 at 18h 39m 50s.xml">
-      <configuration name="Submit.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 40m 57s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Submit_test - 2018.04.27 at 18h 40m 32s.xml">
-      <configuration name="Submit.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 50m 18s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Submit_test - 2018.04.27 at 18h 45m 30s.xml">
-      <configuration name="Submit.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 54m 47s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Submit_test - 2018.04.27 at 19h 03m 55s.xml">
-      <configuration name="Submit.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 56m 11s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Submit_test - 2018.04.27 at 19h 05m 06s.xml">
-      <configuration name="Submit.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 57m 32s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Support_test - 2018.04.27 at 18h 35m 08s.xml">
-      <configuration name="Support.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 13h 58m 56s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Support_test - 2018.04.27 at 19h 46m 50s.xml">
-      <configuration name="Support.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 14h 00m 33s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="publish_test - 2018.04.26 at 11h 51m 14s.xml">
-      <configuration name="publish.test" configurationId="JUnit" />
+    <history-entry file="Submit_test_(1) - 2018.04.28 at 14h 03m 53s.xml">
+      <configuration name="Submit.test (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159195000" />
+    <option name="totallyTimeSpent" value="177403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="4" width="1382" height="743" extended-state="1" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3147541" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58032787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17246597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124590166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4180328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03927987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31013617" sideWeight="0.6579378" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27231467" sideWeight="0.6579378" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14893617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.3420622" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1557377" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11639344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14893617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1768,8 +1903,20 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/SubmitCommentHandler.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/CommentService.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1778,100 +1925,129 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/ApproveNewsResponse.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13-sources.jar!/org/slf4j/LoggerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="133">
+          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/AbstractNewsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE-sources.jar!/org/springframework/test/context/CacheAwareContextLoaderDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/TreadNewsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/ApproveNewsRequest.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Tread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/OverruleNewsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/ApproveHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="49" column="5" selection-start-line="21" selection-start-column="8" selection-end-line="49" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/interceptor/SqlLogInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsTypeEnum.java" />
-    <entry file="file://$PROJECT_DIR$/bun-sys-comm/src/main/java/com/bun/xh/comm/enums/NewsStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Overrule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="27" column="76" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-comm/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/dto/NewsDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding>
-            <element signature="e#3005#3006#0" expanded="false" />
-            <element signature="e#3044#3045#0" expanded="false" />
-            <element signature="e#3108#3109#0" expanded="false" />
-            <element signature="e#3164#3165#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/ReportNewsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="402">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Support.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="326">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/pom.xml">
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SubmitNewsRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        <state relative-caret-position="153">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/exception/BunServerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/enums/ResultCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/ReportNewsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/properties/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="e#657#683#0" expanded="false" />
+            <element signature="e#961#986#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1883,38 +2059,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/UserDeleteNewsResponse.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-comm/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="260">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/UserDeleteNewsRequest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="-652">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/NewLogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/DeleteNewsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="50">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1927,202 +2091,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1212">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SupportNewsResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="125" column="45" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/OverruleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SupportNewsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/TreadNewsResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/TreadNewsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/AbstractNews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Approve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SubmitNewsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar!/org/slf4j/LoggerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13-sources.jar!/org/slf4j/LoggerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-boot.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/properties/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-jdbc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="e#525#541#0" expanded="true" />
-            <element signature="e#552#565#0" expanded="true" />
-            <element signature="e#780#801#0" expanded="true" />
-            <element signature="e#864#887#0" expanded="true" />
-            <element signature="e#961#986#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Submit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/AbstractNewsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
-          <folding>
-            <element signature="e#2659#2660#0" expanded="true" />
-            <element signature="e#2710#2711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/NewsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/NewsMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="236">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <marker date="1524827026077" expanded="true" signature="1703:1765" placeholder="delete from " />
             <marker date="1524827026077" expanded="true" signature="1914:2626" placeholder="insert into news... " />
@@ -2133,10 +2105,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE-sources.jar!/org/springframework/test/context/CacheAwareContextLoaderDelegate.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/dto/CommentDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="473">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding>
+            <element signature="e#3266#3267#0" expanded="false" />
+            <element signature="e#3305#3306#0" expanded="false" />
+            <element signature="e#3369#3370#0" expanded="false" />
+            <element signature="e#3425#3426#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/dao/CommentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Publish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Overrule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Approve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/UserDeleteCommentHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/AbstractNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -2149,25 +2178,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/SubmitNewsHandler.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/CommentFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/ReportNewsHandler.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/api/NewsFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        <state relative-caret-position="20">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/resources/config/spring/applicationContext-boot.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Submit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/NewsFacadeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/comment/AbstractComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/SupportNewsHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="-152">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2175,30 +2240,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/TreadNewsHandler.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/OverruleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/ApproveHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/newshandler/SubmitNewsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-api/src/main/java/com/bun/xh/vo/SubmitCommentRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/convert/ExceptionConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/mapper/CommentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <marker date="1524886783749" expanded="true" signature="1777:1833" placeholder="delete from " />
+            <marker date="1524886783749" expanded="true" signature="1886:1957" placeholder="delete from " />
+            <marker date="1524886783749" expanded="true" signature="2109:2849" placeholder="insert into comment... " />
+            <marker date="1524886783749" expanded="true" signature="2928:3045" placeholder="select from where" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/main/java/com/bun/xh/service/api/CommentFacadeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0-sources.jar!/org/apache/ibatis/binding/MapperProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/AbstractCommentHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bun-sys-repository/src/main/java/com/bun/xh/repository/db/service/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Tread.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-biz/src/main/java/com/bun/xh/biz/commenthandler/SubmitCommentHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="249">
+          <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/news/Support.java">
+    <entry file="file://$PROJECT_DIR$/bun-sys-service/src/test/java/com/bun/xh/service/comment/Submit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="410">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

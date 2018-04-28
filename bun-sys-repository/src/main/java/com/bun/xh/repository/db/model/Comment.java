@@ -25,6 +25,8 @@ public class Comment {
 
     private Integer commReportTime;
 
+    private String commReportReason;
+
     private Integer version;
 
     private Date createdAt;
@@ -117,6 +119,14 @@ public class Comment {
 
     public void setCommReportTime(Integer commReportTime) {
         this.commReportTime = commReportTime;
+    }
+
+    public String getCommReportReason() {
+        return commReportReason;
+    }
+
+    public void setCommReportReason(String commReportReason) {
+        this.commReportReason = commReportReason;
     }
 
     public Integer getVersion() {

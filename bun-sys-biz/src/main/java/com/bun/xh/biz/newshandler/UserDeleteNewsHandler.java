@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 @Service
-public class DeleteNewsHandler extends AbstractNewsHandler{
+public class UserDeleteNewsHandler extends AbstractNewsHandler{
 
     public UserDeleteNewsResponse userDeleteNews(UserDeleteNewsRequest request){
         UserDeleteNewsResponse response = new UserDeleteNewsResponse();

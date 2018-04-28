@@ -57,7 +57,7 @@ public class NewsFacadeImpl implements NewsFacade {
     private ReportNewsHandler reportNewsHandler;
 
     @Autowired
-    private DeleteNewsHandler deleteNewsHandler;
+    private UserDeleteNewsHandler userDeleteNewsHandler;
 
     public SubmitNewsResponse submitNews(SubmitNewsRequest request) throws BunServerException,BunServiceException{
         SubmitNewsResponse response = new SubmitNewsResponse();
@@ -168,7 +168,7 @@ public class NewsFacadeImpl implements NewsFacade {
 
         try {
             LOG.info("删除新闻开始|请求报文" + JSON.toJSONString(request));
-            response = deleteNewsHandler.userDeleteNews(request);
+            response = userDeleteNewsHandler.userDeleteNews(request);
             LOG.info("删除新闻结束|返回报文" + JSON.toJSONString(response));
             ExceptionConvert.CreateException(response);
         }catch (Exception e){

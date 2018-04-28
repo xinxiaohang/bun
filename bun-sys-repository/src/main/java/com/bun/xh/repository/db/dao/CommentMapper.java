@@ -1,17 +1,13 @@
 package com.bun.xh.repository.db.dao;
 
 import com.bun.xh.repository.db.model.Comment;
+import org.apache.ibatis.annotations.Param;
 
 public interface CommentMapper {
-    int deleteByPrimaryKey(Long id);
 
     int insert(Comment record);
 
-    int insertSelective(Comment record);
+    int deleteCommByCommId(@Param("commentId") String commentId);
 
-    Comment selectByPrimaryKey(Long id);
-
-    int updateByPrimaryKeySelective(Comment record);
-
-    int updateByPrimaryKey(Comment record);
+    Comment selectCommByCommId(@Param("commentId") String commentId);
 }
