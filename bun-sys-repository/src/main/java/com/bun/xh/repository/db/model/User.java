@@ -13,7 +13,7 @@ public class User {
 
     private String userPic;
 
-    private Date registTime;
+    private Date registerTime;
 
     private String userStatus;
 
@@ -63,12 +63,12 @@ public class User {
         this.userPic = userPic == null ? null : userPic.trim();
     }
 
-    public Date getRegistTime() {
-        return registTime;
+    public Date getregisterTime() {
+        return registerTime;
     }
 
-    public void setRegistTime(Date registTime) {
-        this.registTime = registTime;
+    public void setregisterTime(Date registerTime) {
+        this.registerTime = registerTime;
     }
 
     public String getUserStatus() {

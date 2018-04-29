@@ -16,7 +16,11 @@ public enum  ResultCodeEnum {
     //查询错误
     NEWS_NULL_ERROR("2000","新闻不存在",0),
     NEWS_LIST_NULL_ERROR("2001","新闻列表不存在",0),
-    COMMENT_NULL_ERROR("2002","评论不存在",0);
+    COMMENT_NULL_ERROR("2002","评论不存在",0),
+    USER_NULL_ERROR("2003","用户不存在",0),
+
+    //验证错误
+    USER_LOGIN_ERROR("3000","用户名或密码错误",0);
 
     String code;
     String message;
