@@ -18,4 +18,8 @@ public class AbstractUserHandler extends AbstractHandler{
     protected void insert(UserDTO userDTO){
         userService.insert(userDTO);
     }
+
+    protected void changeUserStatus(UserDTO userDTO){
+        userService.updateByUserId(userDTO);
+    }
 }

@@ -37,4 +37,14 @@ public class UserService {
 
         userMapper.insert(user);
     }
+
+    public void updateByUserId (UserDTO userDTO){
+        if(StringUtils.isEmpty(userDTO)){
+            return;
+        }
+
+        User user = new User();
+        BeanUtils.copyProperties(userDTO,user);
+        userMapper.updateByUserId(user);
+    }
 }

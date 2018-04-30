@@ -1,6 +1,7 @@
 package com.bun.xh.service.user;
 
 import com.bun.xh.api.UserFacade;
+import com.bun.xh.vo.BeCheckRequest;
 import com.bun.xh.vo.LoginRequest;
 import com.bun.xh.vo.RegisterRequest;
 import org.junit.runner.RunWith;
@@ -27,6 +28,12 @@ public class AbstractUser {
     protected LoginRequest buildLoginRequest(String userId,String password){
         LoginRequest request = new LoginRequest();
         request.setPassword(password);
+        request.setUserId(userId);
+        return request;
+    }
+
+    protected BeCheckRequest buildBeCheckRequest(String userId){
+        BeCheckRequest request = new BeCheckRequest();
         request.setUserId(userId);
         return request;
     }

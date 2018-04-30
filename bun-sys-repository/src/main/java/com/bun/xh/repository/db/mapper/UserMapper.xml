@@ -18,10 +18,6 @@
     updated_at
   </sql>
 
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from user
-    where id = #{id,jdbcType=BIGINT}
-  </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.User" useGeneratedKeys="true">
     insert into user (user_id, user_name, password, 
       user_pic, register_time, user_status, 
@@ -32,112 +28,16 @@
       #{version,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, #{updatedAt,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.bun.xh.repository.db.model.User" useGeneratedKeys="true">
-    insert into user
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="userId != null">
-        user_id,
-      </if>
-      <if test="userName != null">
-        user_name,
-      </if>
-      <if test="password != null">
-        password,
-      </if>
-      <if test="userPic != null">
-        user_pic,
-      </if>
-      <if test="registerTime != null">
-        register_time,
-      </if>
-      <if test="userStatus != null">
-        user_status,
-      </if>
-      <if test="version != null">
-        version,
-      </if>
-      <if test="createdAt != null">
-        created_at,
-      </if>
-      <if test="updatedAt != null">
-        updated_at,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="userId != null">
-        #{userId,jdbcType=VARCHAR},
-      </if>
-      <if test="userName != null">
-        #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="userPic != null">
-        #{userPic,jdbcType=VARCHAR},
-      </if>
-      <if test="registerTime != null">
-        #{registerTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="userStatus != null">
-        #{userStatus,jdbcType=VARCHAR},
-      </if>
-      <if test="version != null">
-        #{version,jdbcType=INTEGER},
-      </if>
-      <if test="createdAt != null">
-        #{createdAt,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatedAt != null">
-        #{updatedAt,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.bun.xh.repository.db.model.User">
+
+  <update id="updateByUserId" parameterType="com.bun.xh.repository.db.model.User">
     update user
-    <set>
-      <if test="userId != null">
-        user_id = #{userId,jdbcType=VARCHAR},
-      </if>
-      <if test="userName != null">
-        user_name = #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        password = #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="userPic != null">
-        user_pic = #{userPic,jdbcType=VARCHAR},
-      </if>
-      <if test="registerTime != null">
-        register_time = #{registerTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="userStatus != null">
-        user_status = #{userStatus,jdbcType=VARCHAR},
-      </if>
-      <if test="version != null">
-        version = #{version,jdbcType=INTEGER},
-      </if>
-      <if test="createdAt != null">
-        created_at = #{createdAt,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatedAt != null">
-        updated_at = #{updatedAt,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.bun.xh.repository.db.model.User">
-    update user
-    set user_id = #{userId,jdbcType=VARCHAR},
-      user_name = #{userName,jdbcType=VARCHAR},
+    set user_name = #{userName,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       user_pic = #{userPic,jdbcType=VARCHAR},
       register_time = #{registerTime,jdbcType=TIMESTAMP},
       user_status = #{userStatus,jdbcType=VARCHAR},
-      version = #{version,jdbcType=INTEGER},
-      created_at = #{createdAt,jdbcType=TIMESTAMP},
-      updated_at = #{updatedAt,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=BIGINT}
+      version = version + 1
+    where user_id = #{userId,jdbcType=VARCHAR}
   </update>
 
   <select id="selectUserByUserId" resultMap="BaseResultMap">

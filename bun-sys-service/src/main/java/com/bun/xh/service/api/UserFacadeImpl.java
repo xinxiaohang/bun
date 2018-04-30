@@ -2,11 +2,14 @@ package com.bun.xh.service.api;
 
 import com.alibaba.fastjson.JSON;
 import com.bun.xh.api.UserFacade;
+import com.bun.xh.biz.userhandler.BeCheckHandler;
 import com.bun.xh.biz.userhandler.LoginHandler;
 import com.bun.xh.biz.userhandler.RegisterHandler;
 import com.bun.xh.exception.BunServerException;
 import com.bun.xh.exception.BunServiceException;
 import com.bun.xh.service.convert.ExceptionConvert;
+import com.bun.xh.vo.BeCheckRequest;
+import com.bun.xh.vo.BeCheckResponse;
 import com.bun.xh.vo.LoginRequest;
 import com.bun.xh.vo.LoginResponse;
 import com.bun.xh.vo.RegisterRequest;
@@ -28,6 +31,9 @@ public class UserFacadeImpl implements UserFacade {
 
     @Autowired
     private LoginHandler loginHandler;
+
+    @Autowired
+    private BeCheckHandler beCheckHandler;
 
     public RegisterResponse register(RegisterRequest request) throws BunServerException,BunServiceException{
 
@@ -55,6 +61,21 @@ public class UserFacadeImpl implements UserFacade {
             ExceptionConvert.CreateException(response);
         }catch (Exception e){
             LOG.error("用户登录异常",e);
+            ExceptionConvert.throwException(e);
+        }
+        return response;
+    }
+
+    public BeCheckResponse beCheck(BeCheckRequest request) throws BunServiceException, BunServerException {
+        BeCheckResponse response = new BeCheckResponse();
+
+        try {
+            LOG.info("成为新闻审核人开始开始|请求报文" + JSON.toJSONString(request));
+            response = beCheckHandler.beCheck(request);
+            LOG.info("成为新闻审核人开始结束|返回报文" + JSON.toJSONString(response));
+            ExceptionConvert.CreateException(response);
+        }catch (Exception e){
+            LOG.error("成为新闻审核人开始异常",e);
             ExceptionConvert.throwException(e);
         }
         return response;
