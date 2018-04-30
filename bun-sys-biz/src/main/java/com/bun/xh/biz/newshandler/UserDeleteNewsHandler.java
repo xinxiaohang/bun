@@ -26,7 +26,9 @@ public class UserDeleteNewsHandler extends AbstractNewsHandler{
             return response;
         }
 
-        userDeleteNewsByNewsId(newsDTO.getNewsId());
+        newsDTO.setNewsStatus(NewsStatusEnum.DELETE.getStatus());
+
+        updateByNewsId(newsDTO);
 
         response = (UserDeleteNewsResponse) buildAbstractResponse(response, ResultCodeEnum.SUCCESS);
 

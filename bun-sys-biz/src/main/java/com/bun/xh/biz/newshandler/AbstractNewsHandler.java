@@ -73,7 +73,7 @@ public class AbstractNewsHandler extends AbstractHandler{
         newsService.updateByNewsId(newsDTO);
     }
 
-    protected void userDeleteNewsByNewsId(String newsId){
-        newsService.deleteNewsByNewsId(newsId);
-    }
+//    protected void userDeleteNewsByNewsId(String newsId){
+//        newsService.deleteNewsByNewsId(newsId);
+//    }
 }

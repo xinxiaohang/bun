@@ -11,7 +11,9 @@ public enum NewsStatusEnum {
 
     APPROVE(2,"审核通过"),
 
-    OVERRULE(-1,"审核不通过");
+    OVERRULE(-1,"审核不通过"),
+
+    DELETE(-2,"已删除");
 
     Integer status;
     String statusDesc;
